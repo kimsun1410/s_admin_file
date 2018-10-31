@@ -1,0 +1,2330 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="http://image.wemakeprice.com/favicon_v01.ico">
+	<meta name="title" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="og:type" property="og:type" content="website">
+	<meta name="og:url" property="og:url" content="http:">
+	<meta name="og:image" property="og:image" content="http:/">
+	<meta name="og:title" property="og:title" content="">
+	<meta name="og:description" property="og:description" content="위메프 - 서비스 정산시스템">
+	<title>위메프 - 서비스 정산시스템 Ui-Kit 가이드</title>
+	<link rel="stylesheet" href="resources/css/common/s_common.css" media="all">
+	<link rel="stylesheet" href="resources/css/common/s_datapicker.css">
+	<link rel="stylesheet" href="resources/css/plugin/jquery.mCustomScrollbar.css">
+	<!--[if lt IE 9]>
+	    <script src="resources/js/placeholder.js"></script>
+	    <script src="resources/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="skipnavigation">
+		<ul>
+		<li><a href="#contents">본문 바로가기</a></li>
+		<li><a href="#gnb">대 메뉴 바로가기</a></li>
+		</ul>
+	</div>
+	<hr>
+	<div id="wrap">
+		<div id="header">
+			<div class="inner_wrap">
+				<button class="ico all_menu">전체보기</button>
+				<h1 class="logo"><a href="#none">서비스 정산시스템</a></h1>
+				<div class="util_top">
+					<ul class="util_wrap">
+						<li>
+							<span>안녕하세요.<b>홍길동</b>님</span>
+						</li>
+						<li><a href="#none">정보수정</a></li>
+						<li><a href="#none">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="sidenav">
+			<div id="nav_inner">
+				<div id="inner_box" class="inner_left">
+					<ul class="list_snb">
+						<li>
+							<h2><a href="#none">PG 대사</a></h2>
+							<div class="sub_menu">
+								<ul class="depth">
+									<li><a href="">승인 대사</a></li>
+									<li class="selected"><a href="#none">정산 대사</a></li>
+									<li><a href="#none">상세조회</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2><a href="#none">정산관리</a></h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">매출 관리</a></li>
+									<li><a href="#none">정산대상 관리</a></li>
+									<li class="selected"><a href="#none">지급대상 관리</a></li>
+									<li><a href="#none">역정산 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2><a href="#none">세금계산서 관리</a></h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">발행대상 관리</a></li>
+									<li><a href="#none">발행제외 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2><a href="#none">운영 관리</a></h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">임의조정 관리</a></li>
+									<li><a href="#none">선입 관리</a></li>
+									<li><a href="#none">지출 결의서</a></li>
+									<li><a href="#none">미사용 환불 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2><a href="#none">마케팅 관리</a></h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">영업대행 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2><a href="#none">회계 대사</a></h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">일마감 대사</a></li>
+									<li><a href="#none">전표 대사</a></li>
+									<li><a href="#none">주문 조회</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<br><br>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="contents">
+				<div class="section">
+					
+					<div class="ui_guide">
+						<h2>타이틀 h3 Style [<span>class="<strong class="text_color">title</strong>"</span>]</h2>
+		                <div class="text_info">
+
+		                	<!-- 타이틀 h3 공통 스타일 -->
+		                	<h3 class="title">정산 대사</h3>
+		                	<h3 class="title">승인 대사</h3>
+							<h3 class="title">상세 조회</h3>
+							<!-- 타이틀 h3 공통 스타일 -->
+
+		                </div>
+	                </div>
+
+	                <div class="ui_guide">
+						<h2>타이틀 h4 Style [<span>class="<strong class="text_color">title</strong>"</span>]</h2>
+		                <div class="text_info">
+
+		                	<!-- 타이틀 h4 공통 스타일 -->
+		                	<h4 class="title">정산 대사</h4>
+		                	<h4 class="title">승인 대사</h4>
+							<h4 class="title">상세 조회</h4>
+							<!-- 타이틀 h4 공통 스타일 -->
+
+		                </div>
+	                </div>
+					
+					<div class="ui_guide">
+						<h2>탭 Style [<span>class="<strong class="text_color">tab</strong>"</span>]</h2>
+		                <div class="text_info">
+							
+							<!-- 탭메뉴 공통 스타일 -->
+							<div class="box_wrap">
+								<ul class="tab">
+									<li class="active">
+										<a href="#none" class="tab1">개별 딜 정산 대상관리</a>
+									</li>
+									<li>
+										<a href="#none" class="tab2">파트너 정산 대상관리</a>
+									</li>
+									<li>
+										<a href="#none" class="tab3">탭 오버 하단라인</a>
+									</li>
+									<li>
+										<a href="#none" class="tab3">탭4번째 메뉴</a>
+									</li>
+								</ul>
+								<br>
+								<ul class="tab">
+									<li>
+										<a href="#none" class="tab1">탭1번째 메뉴</a>
+									</li>
+									<li class="active">
+										<a href="#none" class="tab2">탭2번째 메뉴</a>
+									</li>
+								</ul>
+								<br>
+								<ul class="tab">
+									<li>
+										<a href="#none" class="tab1">탭1번째 메뉴</a>
+									</li>
+								</ul>
+							</div>
+							<!-- 탭메뉴 공통 스타일 -->
+
+		                </div>
+	                </div>
+
+
+	                <div class="ui_guide">
+						<h2>검색박스 Style [<span>class="<strong class="text_color">search_option</strong>"</span>] .type(1줄,버튼1개) .type_50(1줄,버튼2개) , .type_30(2줄)선택</h2>
+		                <div class="text_info">
+
+		                	<!-- 검색박스 1줄 공통 padding:23px 리스트타입 class="type_list" 추가스타일 -->
+							<form method="">
+								<div class="search_option type">
+									<div class="option_box type_list">
+										<dl>
+											<dt>검색조건<span class="ico dotted">*</span></dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">선택하세요.</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>10건</option>
+														<option>20건</option>
+														<option>30건</option>
+														<option>40건</option>
+														<option>50건</option>
+													</select>
+												</div>
+											</dd>
+											<dt>입력조건</dt>
+											<dd>
+												<input type="text" class="iText" placeholder="입력상태 가능">
+											</dd>
+										</dl>
+									</div>
+									<div class="option_btn">
+										<span class="btn_pack btn_medium btn_type4">
+					                		<button type="submit"><i class="icon search"></i>검색</button>
+					                	</span>
+									</div>
+								</div>
+							</form>
+							<!-- 검색박스 1줄 공통 padding:50px 리스트타입 class="type_list" 추가스타일 -->
+							<br>
+
+		                	<!-- 검색박스 1줄 공통 padding:50px 리스트타입 class="type_list" 추가스타일 -->
+							<form method="">
+								<div class="search_option type_50">
+									<div class="option_box type_list">
+										<dl>
+											<dt>사업부<span class="ico dotted">*</span></dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">선택하세요.</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>10건</option>
+														<option>20건</option>
+														<option>30건</option>
+														<option>40건</option>
+														<option>50건</option>
+													</select>
+												</div>
+											</dd>
+											<dt>사업부<span class="ico dotted">*</span></dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">선택하세요.</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>10건</option>
+														<option>20건</option>
+														<option>30건</option>
+														<option>40건</option>
+														<option>50건</option>
+													</select>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div class="option_btn">
+										<span class="btn_pack btn_medium btn_type4">
+					                		<button type="submit"><i class="icon search"></i>검색</button>
+					                	</span>
+					                	<span class="btn_pack btn_medium btn_type">
+					                		<button type="submit">초기화</button>
+					                	</span>
+									</div>
+								</div>
+							</form>
+							<!-- 검색박스 1줄 공통 padding:50px 리스트타입 class="type_list" 추가스타일 -->
+							<br>
+
+							<form method="">
+								<div class="search_option type_50">
+									<div class="option_box">
+										<dl>
+											<dt>사업부<span class="ico dotted">*</span></dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">선택하세요.</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>10건</option>
+														<option>20건</option>
+														<option>30건</option>
+														<option>40건</option>
+														<option>50건</option>
+													</select>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div class="option_btn">
+										<span class="btn_pack btn_medium btn_type4">
+					                		<button type="submit"><i class="icon search"></i>검색</button>
+					                	</span>
+					                	<span class="btn_pack btn_medium btn_type">
+					                		<button type="submit">초기화</button>
+					                	</span>
+									</div>
+								</div>
+							</form>
+							<!-- 검색박스 1줄 공통 padding:50px 스타일 -->
+							<br>
+
+							<!-- 검색박스 2줄 공통 간격 padding:30px 스타일 -->
+							<form method="">
+								<div class="search_option type_30">
+									<div class="option_box">
+										<dl>
+											<dt>사업부<span class="ico dotted">*</span></dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">전체</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>10건</option>
+														<option>20건</option>
+														<option>30건</option>
+														<option>40건</option>
+														<option>50건</option>
+													</select>
+												</div>
+												<div class="sel_wrap sel_w3">
+													<label for="select">팀 선택</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>10건</option>
+														<option>20건</option>
+														<option>30건</option>
+														<option>40건</option>
+														<option>50건</option>
+													</select>
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>입력조건</dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">50건</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>10건</option>
+														<option>20건</option>
+														<option>30건</option>
+														<option>40건</option>
+														<option>50건</option>
+													</select>
+												</div>
+												<span class="iw boxiText_w3">
+													<input type="text" class="iText" placeholder="입력상태 가능">
+												</span>
+											</dd>
+										</dl>
+									</div>
+									<div class="option_btn">
+										<span class="btn_pack btn_medium btn_type4">
+					                		<button type="submit"><i class="icon search"></i>검색</button>
+					                	</span>
+					                	<span class="btn_pack btn_medium btn_type">
+					                		<button type="submit">초기화</button>
+					                	</span>
+									</div>
+								</div>
+							</form>
+							<!-- 검색박스 2줄 공통 간격 padding:30px 스타일 -->
+							<br>
+							
+							<!-- 검색박스 여러줄 공통 스타일 -->
+							<form method="">
+								<div class="search_option">
+									<div class="option_box">
+										<dl>
+											<dt>사업부<span class="ico dotted">*</span></dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">선택하세요.</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>10건</option>
+														<option>20건</option>
+														<option>30건</option>
+														<option>40건</option>
+														<option>50건</option>
+													</select>
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>검색기간<span class="ico dotted">*</span></dt>
+											<dd>
+												<span class="calender">
+													<span class="iw iText_w1">
+														<input type="text" id="datepicker_str">
+													</span>
+													<span class="dash">~</span>
+													<span class="iw iText_w1">
+														<input type="text" id="datepicker_end">
+													</span>
+												</span>
+												<span class="list_btn">
+							                		<a href="#none" class="on">오늘</a>
+							                		<a href="#none">이번주</a>
+							                		<a href="#none">이번달</a>
+							                		<a href="#none">3개월 전</a>
+							                	</span>
+											</dd>
+										</dl>
+										<dl>
+											<dt>입력조건</dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">딜명</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option value="선택1">선택1</option>
+														<option value="선택2">선택2</option>
+														<option value="선택3">선택3</option>
+														<option value="선택4">선택4</option>
+														<option value="선택5">선택5</option>
+													</select>
+												</div>
+												<span class="iw boxiText_w3">
+													<input type="text" class="iText" placeholder="입력상태 가능">
+												</span>
+											</dd>
+										</dl>
+										<dl>
+											<dt>입력조건<span class="ico dotted">*</span></dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">선택하세요</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>선택1</option>
+														<option>선택2</option>
+														<option>선택3</option>
+														<option>선택4</option>
+														<option>선택5</option>
+													</select>
+												</div>
+												<span class="iw boxiText_w3">
+													<input type="text" class="iText" placeholder="입력상태 불가능" disabled="disabled">
+												</span>
+											</dd>
+										</dl>
+										<dl>
+											<dt>입력조건</dt>
+											<dd>
+												<div class="sel_wrap sel_w3">
+													<label for="select">딜명</label>
+													<select class="iselect" title="셀렉트 박스 선택">
+														<option>선택1</option>
+														<option>선택2</option>
+														<option>선택3</option>
+														<option>선택4</option>
+														<option>선택5</option>
+													</select>
+												</div>
+												<span class="iw boxiText_w3">
+													<input type="text" class="iText" placeholder="입력상태 가능" value="입력중 상태">
+												</span>
+											</dd>
+										</dl>
+										<dl>
+											<dt>물류구분</dt>
+											<dd>
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_a" id="chk_01">
+													<label for="chk_01" class="icheckbox"><span class="ichk"></span>선택전</label>
+												</span>
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_a" id="chk_02">
+													<label for="chk_02" class="icheckbox checked"><span class="ichk"></span>선택전 상태</label>
+												</span>
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_a" id="chk_03" disabled="disabled">
+													<label for="chk_03" class="icheckbox focus"><span class="ichk"></span>선택해제 불가</label>
+												</span>
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_a" id="chk_04" disabled="disabled">
+													<label for="chk_04" class="icheckbox"><span class="ichk"></span>선택불가</label>
+												</span>
+											</dd>
+										</dl>
+										<dl>
+											<dt>세부조건</dt>
+											<dd>
+												<span class="chk_box">
+													<input type="radio" class="blind" name="group_b" id="radio_01">
+													<label for="radio_01" class="iradio"><span class="ichk"></span>선택전</label>
+												</span>
+												<span class="chk_box">
+													<input type="radio" class="blind" name="group_b" id="radio_02">
+													<label for="radio_02" class="iradio checked"><span class="ichk"></span>선택전 상태</label>
+												</span>
+												<span class="chk_box">
+													<input type="radio" class="blind" name="group_b" id="radio_03" disabled="disabled">
+													<label for="radio_03" class="iradio focus rdo_disabled"><span class="ichk"></span>선택해제 불가</label>
+												</span>
+												<span class="chk_box">
+													<input type="radio" class="blind" name="group_b" id="radio_04" disabled="disabled">
+													<label for="radio_04" class="iradio rdo_disabled"><span class="ichk"></span>선택불가</label>
+												</span>
+											</dd>
+										</dl>
+									</div>
+									<div class="option_btn">
+										<span class="btn_pack btn_medium btn_type4">
+					                		<button type="submit"><i class="icon search"></i>검색</button>
+					                	</span>
+					                	<span class="btn_pack btn_medium btn_type">
+					                		<button type="submit">초기화</button>
+					                	</span>
+									</div>
+								</div>
+							</form>
+							<!-- 검색박스 여러줄 공통 스타일 -->
+
+		                </div>
+	                </div>
+
+	                <div class="ui_guide">
+						<h2>셀렉트박스 Style [<span>class="<strong class="text_color">sel_wrap</strong>" (가로값추가) sel_w1, sel_w2, sel_w3</span>] , [<span>class="<strong class="text_color">iselect</strong>"</span>]</h2>
+		                <div class="text_info">
+							
+							<!-- 셀렉트박스 공통 스타일 -->
+							<div class="sel_wrap">
+								<label for="default">기본 셀렉트박스 스타일입니다.</label>
+								<select class="iselect" title="셀렉트 박스 선택">
+									<option>test01</option>
+									<option>test02</option>
+									<option>test03</option>
+									<option>test04</option>
+									<option>test05</option>
+								</select>
+							</div>
+							<!-- 셀렉트박스 공통 스타일 -->
+							<br>
+							<div class="sel_wrap sel_w1">
+								<label for="list_num">50건</label>
+								<select class="iselect" title="셀렉트 박스 선택">
+									<option>10건</option>
+									<option>20건</option>
+									<option>30건</option>
+									<option>40건</option>
+									<option>50건</option>
+								</select>
+							</div>
+
+							<div class="sel_wrap sel_w3">
+								<label for="select">선택하세요</label>
+								<select class="iselect" title="셀렉트 박스 선택">
+									<option>선택1</option>
+									<option>선택2</option>
+									<option>선택3</option>
+									<option>선택4</option>
+									<option>선택5</option>
+								</select>
+							</div>
+
+							<div class="sel_wrap sel_w3 disabled">
+								<label for="select">50건</label>
+								<select class="iselect" title="셀렉트 박스 선택">
+									<option>10건</option>
+									<option>20건</option>
+									<option>30건</option>
+									<option>40건</option>
+									<option>50건</option>
+								</select>
+							</div>
+
+						</div>
+	                </div>
+
+	                <div class="ui_guide">
+						<h2>인풋박스 Style [<span>type="<strong class="text_color">text</strong>"</span>] , [<span>class="<strong class="text_color">iText</strong>" (가로값추가) iText_w1, iText_w2, iText_w3</span>]</h2>
+		                
+						<div class="text_info">
+
+							<!-- 인풋박스 공통 스타일 -->
+							<input type="text" class="iText" placeholder="입력상태 가능">
+							<!-- 인풋박스 공통 스타일 -->
+							<br >
+							<br >
+							<!-- 인풋패스워드 공통 스타일 -->
+							<span class="iText_w1">
+								<input type="password">
+							</span>
+							<!-- 인풋패스워드 공통 스타일 -->
+							<br >
+							<br >
+
+							<!-- 인풋disabled 공통 스타일 -->
+							<input type="text" disabled="disabled" placeholder="입력불가 상태">
+							<!-- 인풋disabled 공통 스타일 -->
+
+		                </div>
+	                </div>
+
+	                <div class="ui_guide">
+						<h2>캘린더 인풋박스(Sample) Style [<span>class="<strong class="text_color">calender</strong>"</span>]</h2>
+		                
+						<div class="text_info">
+
+							<!-- 달력 공통 스타일 -->
+							<span class="calender">
+								<span class="iw iText_w1">
+									<input type="text" id="datepicker_s" value="2018-07-01">
+								</span>
+								<span class="dash">~</span>
+								<span class="iw iText_w1">
+									<input type="text" id="datepicker_e" value="2018-08-29">
+								</span>
+							</span>
+							<!-- 달력 공통 스타일 -->
+
+		                </div>
+	                </div>
+
+	                <div class="ui_guide">
+						<h2>라디오버튼, 체크버튼 Style [<span>type = "<strong class="text_color">iradio</strong>"</span>] , [<span>type = "<strong class="text_color">icheckbox</strong>"</span>]</h2>
+		                <div class="text_info">
+
+		                	<!-- 체크박스 공통 스타일 -->
+							<span class="chk_box">
+								<input type="checkbox" class="blind" name="group_c" id="chk_1">
+								<label for="chk_1" class="icheckbox"><span class="ichk"></span>선택전</label>
+							</span>
+							<!-- 체크박스 공통 스타일 -->
+
+							<span class="chk_box">
+								<input type="checkbox" class="blind" name="group_c" id="chk_2">
+								<label for="chk_2" class="icheckbox checked"><span class="ichk"></span>선택전 상태</label>
+							</span>
+							<span class="chk_box">
+								<input type="checkbox" class="blind" name="group_c" id="chk_3" disabled="disabled">
+								<label for="chk_3" class="icheckbox focus"><span class="ichk"></span>선택해제 불가</label>
+							</span>
+							<span class="chk_box">
+								<input type="checkbox" class="blind" name="group_c" id="chk_4" disabled="disabled">
+								<label for="chk_4" class="icheckbox"><span class="ichk"></span>선택불가</label>
+							</span>
+							
+							<!-- 라디오버튼 공통 스타일 -->
+							<span class="chk_box">
+								<input type="radio" class="blind" name="group_d" id="radio_1">
+								<label for="radio_1" class="iradio"><span class="ichk"></span>선택전</label>
+							</span>
+							<!-- 라디오버튼 공통 스타일 -->
+
+							<span class="chk_box">
+								<input type="radio" class="blind" name="group_d" id="radio_2">
+								<label for="radio_2" class="iradio checked"><span class="ichk"></span>선택전 상태</label>
+							</span>
+							<span class="chk_box">
+								<input type="radio" class="blind" name="group_d" id="radio_3" disabled="disabled">
+								<label for="radio_3" class="iradio focus"><span class="ichk"></span>선택해제 불가</label>
+							</span>
+							<span class="chk_box">
+								<input type="radio" class="blind" name="group_d" id="radio_4" disabled="disabled">
+								<label for="radio_4" class="iradio"><span class="ichk"></span>선택불가</label>
+							</span>
+
+							
+						</div>
+	                </div>
+
+	                <div class="ui_guide">
+						<h2>버튼리스트 탭메뉴 Style [<span>class="<strong class="text_color">list_btn</strong>"</span>]</h2>
+		                <div class="text_info">
+		                	
+							<!-- 버튼리스트 탭 공통 스타일 -->
+		                	<span class="list_btn">
+		                		<a href="#none" class="on">오늘</a>
+		                		<a href="#none">이번주</a>
+		                		<a href="#none">이번달</a>
+		                		<a href="#none">3개월 전</a>
+		                	</span>
+		                	<!-- 버튼리스트 탭 공통 스타일 -->
+
+		                </div>
+					</div>
+
+					<div class="ui_guide">
+						<h2>검색버튼 Style [<span>class="<strong class="text_color">btn_pack btn_medium</strong>"</span>]</h2>
+		                <div class="text_info">
+
+		                	<!-- 검색버튼 공통 스타일 -->
+		                	<span class="btn_pack btn_medium btn_type">
+		                		<button type="submit">초기화</button>
+		                	</span>
+		                	<!-- 검색버튼 공통 스타일 -->
+
+		                	<span class="btn_pack btn_medium btn_type4">
+		                		<button type="submit"><i class="icon search"></i>검색</button>
+		                	</span>
+
+		                	<span class="btn_pack btn_medium btn_type4">
+		                		<button type="submit">확인</button>
+		                	</span>
+
+		                	<span class="btn_pack btn_medium btn_type">
+		                		<button type="submit">취소</button>
+		                	</span>
+
+		                </div>
+					</div>
+
+					<div class="ui_guide">
+						<h2>일반버튼 Style [<span>class="<strong class="text_color">btn_pack btn_small</strong>"</span>]</h2>
+		                <div class="text_info">
+
+		                	<!-- 일반버튼 공통 스타일 -->
+		                	<span class="btn_pack btn_small btn_type">
+		                		<a hhref="#none" title="엑셀 다운로드">엑셀 다운로드</a>
+		                	</span>
+		                	<!-- 일반버튼 공통 스타일 -->
+
+		                	<span class="btn_pack btn_small btn_type">
+		                		<a hhref="#none" title="양식 다운로드">양식 다운로드</a>
+		                	</span>
+		                	<span class="btn_pack btn_small btn_type2">
+		                		<a hhref="#none" title="일괄 정산처리">일괄 정산처리</a>
+		                	</span>
+		                	<span class="btn_pack btn_small btn_type2">
+		                		<a hhref="#none" title="선택 정산처리">선택 정산처리</a>
+		                	</span>
+		                	<span class="btn_pack btn_small btn_type3">
+		                		<button type="submit">검색</button>
+		                	</span>
+		                	<span class="btn_pack btn_small btn_type2">
+		                		<button type="submit">저장</button>
+		                	</span>
+							
+							<span class="btn_file">
+								<input type="file" class="blind" id="file">
+								<label for="file">파일선택</label>
+							</span>
+		                </div>
+					</div>
+
+					<div class="ui_guide">
+						<h2>블릿텍스트 Style [<span>class="<strong class="text_color">desc</strong>"</span>]</h2>
+		                <div class="text_info">
+
+		                	<!-- 블릿텍스트 공통 스타일 -->
+		                	<p class="desc"><span class="ico ico_dot"></span>텍스트입니다.</p>
+		                	<!-- 블릿텍스트 공통 스타일 -->
+
+		                </div>
+					</div>
+
+					<div class="ui_guide">
+						<h2>테이블 Style [<span>class="<strong class="text_color">md_tbl</strong>"</span>] > [<span>class="<strong class="text_color">tbl_wrap</strong>"</span>] > [<span>class="<strong class="text_color">tbl</strong>"</span>]</h2>
+		                <div class="text_info">
+
+		                	<!-- 테이블 공통 스타일 h4, 건수 스타일 -->
+		                	<div class="md_tbl">
+
+		                		<!-- 테이블 타이틀 스타일 -->
+			                	<div class="md_title">
+			                		<h4 class="title">제외 대상 등록</h4>
+			                	</div>
+			                	<!-- 테이블 타이틀 스타일 -->
+
+			                	<!-- 검색 건수 스타일 -->
+			                	<div class="desc_tr">
+			                		<p class="desc">전체<em>380</em>건</p>
+			                	</div>
+			                	<!-- 검색 건수 스타일 -->
+
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:210px">
+											<col style="width:145px">
+											<col style="width:115px">
+											<col style="width:auto">
+										</colgroup>
+										<thead>
+											<tr>
+											    <th scope="col">업체ID<span class="ico dotted">*</span></th>
+											    <th scope="col">업체명</th>
+											    <th scope="col">사업자번호</th>
+											    <th scope="col" class="last">제외사유</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="align_l">
+													<div class="tbl_search">
+														<span class="iw iText_w8">
+															<input type="text" class="iText" placeholder="wemakeprice">
+														</span>
+														<span class="btn_pack btn_small btn_type3">
+									                		<button type="submit">검색</button>
+									                	</span>
+								                	</div>
+												</td>
+											    <td>(주)아마준</td>
+											    <td>987-65-41230</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<span class="iw iText_w9">
+												    		<input type="text" class="iText" placeholder="입력상태 가능">
+												    	</span>
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 스타일 -->
+
+							<br><br>
+							<!-- 테이블 공통 건수, 버튼 스타일 1  -->
+		                	<div class="md_tbl">
+
+		                		<!-- 검색 건수 스타일 -->
+		                		<p class="desc">전체<em>380</em>건</p>
+		                		<!-- 검색 건수 스타일 -->
+
+		                		<!-- 왼쪽 버튼 스타일 -->
+			                	<div class="md_title">
+			                		<span class="btn_pack btn_small btn_type2">
+				                		<a hhref="#none" title="전체선택">선택 정산처리</a>
+				                	</span>
+				                	<span class="btn_pack btn_small btn_type2">
+				                		<a hhref="#none" title="전체선택">선택 보류처리</a>
+				                	</span>
+				                	<span class="btn_pack btn_small btn_type2">
+				                		<a hhref="#none" title="전체선택">선택 보류해제</a>
+				                	</span>
+			                	</div>
+			                	<!-- 왼쪽 버튼 스타일 -->
+
+			                	<!-- 오른쪽 버튼 스타일 -->
+			                	<div class="desc_tr btn">
+			                		<span class="btn_pack btn_small btn_type">
+				                		<button type="submit">양식 다운로드</button>
+				                	</span>
+			                		<span class="btn_pack btn_small btn_type">
+				                		<button type="submit">엑셀 다운로드</button>
+				                	</span>
+				                	<div class="sel_wrap sel_w1 disabled">
+										<label for="list_num">5건</label>
+										<select class="iselect" title="셀렉트 박스 선택">
+											<option>10건</option>
+											<option>50건</option>
+											<option>100건</option>
+											<option>200건</option>
+											<option>500건</option>
+										</select>
+									</div>
+			                	</div>
+			                	<!-- 오른쪽 버튼 스타일 -->
+
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:210px">
+											<col style="width:145px">
+											<col style="width:115px">
+											<col style="width:auto">
+										</colgroup>
+										<thead>
+											<tr>
+											    <th scope="col">업체ID</th>
+											    <th scope="col">업체명</th>
+											    <th scope="col">사업자번호</th>
+											    <th scope="col" class="last">제외사유</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="align_l">
+													<div class="tbl_search">
+														<span class="iw iText_w8">
+															<input type="text" class="iText" placeholder="wemakeprice">
+														</span>
+														<span class="btn_pack btn_small btn_type3">
+									                		<button type="submit">검색</button>
+									                	</span>
+								                	</div>
+												</td>
+											    <td>(주)아마준</td>
+											    <td>987-65-41230</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<span class="iw iText_w9">
+												    		<input type="text" class="iText" placeholder="입력상태 가능">
+												    	</span>
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 건수, 버튼 스타일 1  -->
+
+							<br><br>
+							<!-- 테이블 공통 건수,버튼 스타일 2 -->
+		                	<div class="md_tbl">
+								
+		                		<!-- 검색 건수 스타일 -->
+		                		<div class="md_title">
+		                			<p class="desc">전체<em>380</em>건</p>
+		                		</div>
+		                		<!-- 검색 건수 스타일 -->
+
+			                	<!-- 오른쪽 버튼 스타일 -->
+			                	<div class="desc_tr btn">
+				                	<div class="sel_wrap sel_w1">
+										<label for="list_num">200건</label>
+										<select class="iselect" title="셀렉트 박스 선택">
+											<option>10건</option>
+											<option>50건</option>
+											<option>100건</option>
+											<option>200건</option>
+											<option>500건</option>
+										</select>
+									</div>
+			                	</div>
+			                	<!-- 오른쪽 버튼 스타일 -->
+
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:210px">
+											<col style="width:145px">
+											<col style="width:115px">
+											<col style="width:auto">
+										</colgroup>
+										<thead>
+											<tr>
+											    <th scope="col">업체ID</th>
+											    <th scope="col">업체명</th>
+											    <th scope="col">사업자번호</th>
+											    <th scope="col" class="last">제외사유</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="align_l">
+													<div class="tbl_search">
+														<span class="iw iText_w8">
+															<input type="text" class="iText" placeholder="wemakeprice">
+														</span>
+														<span class="btn_pack btn_small btn_type3">
+									                		<button type="submit">검색</button>
+									                	</span>
+								                	</div>
+												</td>
+											    <td>(주)아마준</td>
+											    <td>987-65-41230</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<span class="iw iText_w9">
+												    		<input type="text" class="iText" placeholder="입력상태 가능">
+												    	</span>
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td colspan="4" class="no_data">
+													<p>검색 결과가 존재하지 않습니다.</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 건수,버튼 스타일 2 -->
+								
+							<br><br>
+							<!-- 테이블 공통 vertical 스타일 1 -->
+		                	<div class="md_tbl tbl_list">
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:20%">
+											<col style="width:80%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>처리유형</th>
+												<td>뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.</td>
+											</tr>
+											<tr>
+												<th>처리사유</th>
+												<td>2019-09-09</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 vertical 스타일 1 -->
+
+							<br><br>
+							<!-- 테이블 공통 vertical 스타일  2 -->
+		                	<div class="md_tbl tbl_list">
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:15%">
+											<col style="width:35%">
+											<col style="width:15%">
+											<col style="width:35%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>사업부</th>
+												<td>외식사업부</td>
+												<th>업체ID</th>
+												<td>wesca1234568</td>
+											</tr>
+											<tr>
+												<th>업체명</th>
+												<td>테스트</td>
+												<th>지점명</th>
+												<td>테스트</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 vertical 스타일 2 -->
+
+
+							<br><br>
+							<div id="realgrid"></div>
+
+		                </div>
+					</div>
+					
+					<div class="ui_guide">
+						<h2>페이징 Style [<span>class="<strong class="text_color">pagination</strong>"</span>]</h2>
+		                <div class="text_info">
+
+		                	<!-- 페이징 공통 스타일 -->
+		                	<div class="pagination">
+						        <a href="#none" class="first">처음</a>
+						        <a href="#none" class="num on" title="현재 페이지"><span>1</span></a>
+						        <a href="#none" class="num"><span>2</span></a>
+						        <a href="#none" class="num"><span>3</span></a>
+						        <a href="#none" class="num"><span>4</span></a>
+						        <a href="#none" class="num"><span>5</span></a>
+						        <a href="#none" class="num"><span>6</span></a>
+						        <a href="#none" class="num"><span>7</span></a>
+						        <a href="#none" class="num"><span>8</span></a>
+						        <a href="#none" class="num"><span>9</span></a>
+						        <a href="#none" class="num"><span>10</span></a>
+						        <a href="#none" class="last">마지막</a>
+						    </div>
+						    <!-- 페이징 공통 스타일 -->
+
+		                </div>
+					</div>
+	                
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<!--<div id="footer">
+			<div></div>
+		</div>-->
+
+		<!--  레이어팝업 공통 스타일 -->
+		<div class="ui-dialog-pop">
+
+			<div class="popup pop_w500" tabindex="0" data-popup-con="popup500" data-focus="popup500" data-focus-prev="popup500-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 500)</h5>
+					</div>
+					<div class="popup_content">
+
+						<div class="info_desc">
+							<p><em>일괄 보류해제 처리</em>시 선택하신 모든 회차의 정산대금이 하나의 사유로 기록됩니다.</p>
+						</div>
+
+						<div class="md_tbl tbl_list">
+		                	<div class="tbl_wrap">
+								<table class="tbl">
+									<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+									<colgroup>
+										<col style="width:20%">
+										<col style="width:80%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>처리유형</th>
+											<td>뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.</td>
+										</tr>
+										<tr>
+											<th>처리사유</th>
+											<td>2019-09-09</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="btn_box">
+							<span class="btn_pack btn_medium btn_type4">
+		                		<button type="submit">확인</button>
+		                	</span>
+		                	<span class="btn_pack btn_medium btn_type">
+		                		<button type="submit">취소</button>
+		                	</span>
+						</div>
+
+					</div>
+				</div>
+				<a href="#none" class="ico popup-close" data-focus="popup500-close" data-focus-next="popup500">닫기</a>
+			</div>
+
+			<div class="popup pop_w600" tabindex="0" data-popup-con="popup600" data-focus="popup600" data-focus-prev="popup600-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 650)</h5>
+					</div>
+					<div class="popup_content">
+						<form method="">
+							<div class="search_option">
+								<div class="option_box">
+									<dl>
+										<dt>검색조건</dt>
+										<dd>
+											<div class="sel_wrap sel_w2">
+												<label for="select">업체명</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>10건</option>
+													<option>20건</option>
+													<option>30건</option>
+													<option>40건</option>
+													<option>50건</option>
+												</select>
+											</div>
+											<span class="iw iText_w1">
+												<input type="text" class="iText" placeholder="검색어를 입력하세요">
+											</span>
+										</dd>
+									</dl>
+								</div>
+								<div class="option_btn">
+									<span class="btn_pack btn_small btn_type4">
+				                		<button type="submit">검색</button>
+				                	</span>
+								</div>
+							</div>
+						</form>
+
+						<div class="md_tbl">
+		                	<div class="tbl_wrap">
+								<table class="tbl">
+									<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+									<colgroup>
+										<col style="width:210px">
+										<col style="width:145px">
+										<col style="width:115px">
+										<col style="width:auto">
+									</colgroup>
+									<thead>
+										<tr>
+										    <th scope="col">업체ID</th>
+										    <th scope="col">업체명</th>
+										    <th scope="col">사업자번호</th>
+										    <th scope="col" class="last">제외사유</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="4" class="no_data">
+												<p>검색결과가 없습니다.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="btn_box">
+							<span class="btn_pack btn_medium btn_type4">
+		                		<button type="submit">확인</button>
+		                	</span>
+		                	<span class="btn_pack btn_medium btn_type">
+		                		<button type="submit">닫기</button>
+		                	</span>
+						</div>
+
+
+					</div>
+				</div>
+				<a href="#none" class="ico popup-close" data-focus="popup600-close" data-focus-next="popup600">닫기</a>
+			</div>
+
+			<div class="popup pop_w750" tabindex="0" data-popup-con="popup750" data-focus="popup750" data-focus-prev="popup750-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 750)</h5>
+					</div>
+					<div class="popup_content"></div>
+				</div>
+				<a href="#none" class="ico popup-close" data-focus="popup750-close" data-focus-next="popup750">닫기</a>
+			</div>
+
+			<div class="popup pop_w850" tabindex="0" data-popup-con="popup850" data-focus="popup850" data-focus-prev="popup850-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 850)</h5>
+					</div>
+					<div class="popup_content"></div>
+				</div>
+				<a href="#none" class="ico popup-close" data-focus="popup850-close" data-focus-next="popup850">닫기</a>
+			</div>
+
+			<div class="popup pop_w1000" tabindex="0" data-popup-con="popup1000" data-focus="popup1000" data-focus-prev="popup1000-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 1000)</h5>
+					</div>
+					<div class="popup_content"></div>
+				</div>
+				<a href="#" class="ico popup-close" data-focus="popup1000-close" data-focus-next="popup1000">닫기</a>
+			</div>
+
+			<!--  xpopup 딤드 공통 스타일 -->
+			<div id="xpopup"></div>
+			<!--  xpopup 딤드 공통 스타일 -->
+
+		</div>
+		<!--  레이어팝업 공통 스타일 -->
+
+	</div>
+	<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="resources/grid/realgridjs-lic.js"></script>
+	<script type="text/javascript" src="resources/grid/realgridjs_eval.1.1.29.min.js"></script>
+	<script type="text/javascript" src="resources/grid/realgridjs-api.1.1.29.js"></script>
+	<script type="text/javascript" src="resources/grid/jszip.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="resources/js/ui-common.js"></script>
+	<script type="text/javascript">
+		var gridView;
+		var dataProvider;
+		$(document).ready( function(){
+		    RealGridJS.setRootContext("resources/grid");
+		    dataProvider = new RealGridJS.LocalDataProvider();
+		    gridView = new RealGridJS.GridView("realgrid");
+		    gridView.setDataSource(dataProvider);
+		    var hoverMaskValue = $('#selHoverMask').val();
+		    var imageButtons1 = [{
+			  "name": "지급일변경",
+			  "up": "resources/images/table/change1.png",
+			  "hover": "resources/images/table/change1.png",
+			  "down": "resources/images/table/change1.png",
+			  "width":75
+			}];
+			var imageButtons2 = [{
+			  "name": "변경",
+			  "up": "resources/images/table/change2.png",
+			  "hover": "resources/images/table/change2.png",
+			  "down": "resources/images/table/change3.png",
+			  "width":40
+			}];
+			var imageButtons3 = [{
+			  "name": "정산완료",
+			  "up": "resources/images/table/complete.png",
+			  "hover": "resources/images/table/complete.png",
+			  "down": "resources/images/table/complete.png",
+			  "width":66
+			}];
+			var imageButtons4 = [{
+			  "name": "보류해제",
+			  "up": "resources/images/table/hold_clear.png",
+			  "hover": "resources/images/table/hold_clear.png",
+			  "down": "resources/images/table/hold_clear.png",
+			  "width":64
+			}];
+		    gridView.setDisplayOptions({
+			  fitStyle: "evenFill",
+			  rowHoverMask:{
+			    visible:true,
+			    styles:{
+			      background:"#08000000"
+			    },
+			    hoverMask: hoverMaskValue
+			  },
+			  rowFocusVisible:true, 
+  			  rowFocusBackground:"#090000ff",
+  			  heightMeasurer: "fixed",
+			  rowResizable: true,
+			  rowHeight:45,
+			});
+			gridView.setFooter({
+			  visible: false 
+			});
+			gridView.setPanel({
+			  visible: false ,
+			  showAll: false  
+			});
+			gridView.setCheckBar({
+			  visible: false ,
+			  showAll: false  
+			});
+			gridView.setStateBar({
+			  visible: false  
+			});
+			gridView.setIndicator({
+			  visible: true  
+			});
+			gridView.setHeader(
+			  {headerHeightFill : "default"}
+			);
+		   	gridView.setStyles({
+			    "grid": {
+			        "background": "#fff",
+			        "iconLocation": "left",
+			        "border": "#888,0",
+			        "borderBottom": "#ffc9ced3,0",
+			        "iconAlignment": "center",
+			        "iconPadding": "0",
+			        "selectedBackground": "#ff696969",
+			        "contentFit": "auto",
+			        "inactiveBackground": "#ffd3d3d3",
+			        "iconOffset": "0",
+			        "selectionDisplay": "mask",
+			        "hoveredMaskBackground": "#1f5292f7",
+			        "hoveredMaskBorder": "#335292f7,1",
+			        "fontBold": "false",
+			        "paddingRight": "5",
+			        "paddingBottom": "10",
+			        "paddingTop": "10",
+			        "figureBackground": "#ff4a88d2",
+			        "selectedForeground": "#fff",
+			        "foreground": "#ff000000",
+			        "inactiveForeground": "#ff808080",
+			        "line": "#ffa1adbb,1",
+			        "textAlignment": "center",
+			        "lineAlignment": "center",
+			        "iconIndex": "0"
+			    },
+			    "panel": {
+			        "background": "#f9f9f9",
+			        "paddingRight": "10",
+			        "iconLocation": "left",
+			        "border": "#888,1",
+			        "borderTop": "#888,2",
+			        "selectedForeground": "#fff",
+			        "iconAlignment": "center",
+			        "foreground": "#ff787878",
+			        "inactiveForeground": "#ff808080",
+			        "borderBottom": "#888888,2",
+			        "textAlignment": "near",
+			        "selectedBackground": "#ff696969",
+			        "lineAlignment": "center",
+			        "inactiveBackground": "#ffd3d3d3",
+			        "iconOffset": "0",
+			        "selectionDisplay": "mask",
+			        "hoveredMaskBorder": "#335292f7,1",
+			        "iconPadding": "0",
+			        "hoveredMaskBackground": "#1f5292f7",
+			        "contentFit": "auto",
+			        "paddingTop": "7",
+			        "borderRight": "#ff777777,1",
+			        "figureBackground": "#ff008800",
+			        "paddingBottom": "7",
+			        "iconIndex": "0"
+			    },
+			    "body": {
+			        "background": "#fff",
+			        "iconLocation": "left",
+			        "border": "#ff313539,1",
+			        "iconAlignment": "center",
+			        "borderBottom": "#ffdedede,1",
+			        "iconPadding": "0",
+			        "selectedBackground": "#ff696969",
+			        "contentFit": "auto",
+			        "inactiveBackground": "#ffd3d3d3",
+			        "iconOffset": "0",
+			        "selectionDisplay": "mask",
+			        "hoveredMaskBackground": "#1f5292f7",
+			        "hoveredMaskBorder": "#335292f7,1",
+			        "paddingRight": "7",
+			        "paddingBottom": "5",
+			        "paddingTop": "5",
+			        "figureBackground": "#ff008800",
+			        "selectedForeground": "#444",
+			        "foreground": "#444",
+			        "inactiveForeground": "#777",
+			        "line": "#ececec,1",
+			        "textAlignment": "center",
+			        "lineAlignment": "center",
+			        "borderRight": "#ffdedede,1",
+			        "iconIndex": "0",
+			        "empty": {}
+			    },
+			    "fixed": {
+			        "background": "#ffd3d3d3",
+			        "paddingRight": "2",
+			        "iconLocation": "left",
+			        "border": "#88888888,1",
+			        "selectedForeground": "#fff",
+			        "iconAlignment": "center",
+			        "foreground": "#ff000000",
+			        "inactiveForeground": "#ff808080",
+			        "borderBottom": "#ff999999,1",
+			        "textAlignment": "center",
+			        "selectedBackground": "#ff696969",
+			        "lineAlignment": "center",
+			        "inactiveBackground": "#ffd3d3d3",
+			        "iconOffset": "0",
+			        "selectionDisplay": "mask",
+			        "hoveredMaskBorder": "#335292f7,1",
+			        "iconPadding": "0",
+			        "hoveredMaskBackground": "#1f5292f7",
+			        "contentFit": "auto",
+			        "paddingTop": "2",
+			        "borderRight": "#ff999999,1",
+			        "figureBackground": "#ff008800",
+			        "paddingBottom": "2",
+			        "iconIndex": "0",
+			        "colBar": {
+			            "background": "#fff",
+			            "paddingRight": "2",
+			            "iconLocation": "left",
+			            "border": "#ff313539,1",
+			            "selectedForeground": "#fff",
+			            "iconAlignment": "center",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "borderBottom": "#ff808080,1",
+			            "textAlignment": "center",
+			            "selectedBackground": "#ff696969",
+			            "lineAlignment": "center",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "contentFit": "auto",
+			            "paddingTop": "2",
+			            "borderRight": "#ff808080,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "iconIndex": "0",
+			            "borderLeft": "#ff808080,1"
+			        },
+			        "rowBar": {
+			            "background": "#ffd3d3d3",
+			            "paddingRight": "2",
+			            "iconLocation": "left",
+			            "border": "#88888888,1",
+			            "selectedForeground": "#fff",
+			            "iconAlignment": "center",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "borderBottom": "#ff999999,1",
+			            "textAlignment": "center",
+			            "selectedBackground": "#ff696969",
+			            "lineAlignment": "center",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "contentFit": "auto",
+			            "paddingTop": "2",
+			            "borderRight": "#ff999999,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "iconIndex": "0"
+			        }
+			    },
+			    "header": {
+			        "background": "linear,#f4f4f4,#f4f4f4,90",
+			        "iconLocation": "left",
+			        "border": "#ff313539,1",
+			        "iconAlignment": "center",
+			        "borderTop": "#888,0",
+			        "borderBottom": "#ffdedede,1",
+			        "selectedBackground": "linear,#7858a1,#7858a1,180",
+			        "contentFit": "auto",
+			        "inactiveBackground": "#7858a1",
+			        "iconOffset": "0",
+			        "selectionDisplay": "inversion",
+			        "iconPadding": "0",
+			        "hoveredMaskBackground": "linear,#7858a1,#7858a1,180",
+			        "hoveredMaskBorder": "#9f7bce,0",
+			        "fontSize":"12",
+			        "fontBold": "true",
+			        "fontFamily": "돋움,Dotum,sans-serif",
+			        "figureBackground": "#ff000000",
+			        "paddingBottom": "7",
+			        "paddingTop": "12",
+			        "paddingRight": "7",
+			        "selectedForeground": "#fff",
+			        "foreground": "#444",
+			        "inactiveForeground": "#7858a1",
+			        "textAlignment": "center",
+			        "borderLeft": "#ececec,0",
+			        "lineAlignment": "center",
+			        "borderRight": "#ffdedede,1",
+			        "iconIndex": "0",
+			        "group": {
+			            "background": "linear,#f4f4f4,#f4f4f4,90",
+			            "iconLocation": "left",
+			            "border": "#ff313539,1",
+			            "iconAlignment": "center",
+			            "borderBottom": "#ffdedede,1",
+			            "borderTop": "#ff313539,1",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "linear,#7858a1,#7858a1,90",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "fontSize":"12",
+				        "fontBold": "true",
+				        "fontFamily": "돋움,Dotum,sans-serif",
+			            "figureBackground": "#ff000000",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#fff",
+			            "foreground": "#444",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "center",
+			            "borderLeft": "#ffdedede,0",
+			            "lineAlignment": "center",
+			            "borderRight": "#ffdedede,1",
+			            "iconIndex": "0"
+			        }
+			    },
+			    "footer": {
+			        "background": "#ffdee2e7",
+			        "iconLocation": "left",
+			        "border": "#88888888,1",
+			        "iconAlignment": "center",
+			        "iconOffset": "0",
+			        "borderTop": "#ff79828b,1",
+			        "selectedBackground": "#ff696969",
+			        "contentFit": "auto",
+			        "inactiveBackground": "#ffd3d3d3",
+			        "selectionDisplay": "mask",
+			        "iconPadding": "0",
+			        "hoveredMaskBackground": "#1f5292f7",
+			        "hoveredMaskBorder": "#335292f7,1",
+			        "paddingRight": "2",
+			        "paddingBottom": "0",
+			        "paddingTop": "0",
+			        "figureBackground": "#ff008800",
+			        "selectedForeground": "#fff",
+			        "foreground": "#ff000000",
+			        "inactiveForeground": "#ff808080",
+			        "textAlignment": "near",
+			        "borderLeft": "#fff,1",
+			        "lineAlignment": "center",
+			        "borderRight": "#ff9099a3,1",
+			        "iconIndex": "0"
+			    },
+			    "rowGroup": {
+			        "header": {
+			            "background": "#f9f9f9",
+			            "iconLocation": "left",
+			            "border": "#ff313539,0",
+			            "iconAlignment": "center",
+			            "borderBottom": "#dbdbdb,1",
+			            "borderTop": "#fff,1",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff002f6e",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "near",
+			            "borderLeft": "#fff,1",
+			            "lineAlignment": "center",
+			            "borderRight": "#ff85a8d0,1",
+			            "iconIndex": "0"
+			        },
+			        "footer": {
+			            "background": "#ff9cbade",
+			            "iconLocation": "left",
+			            "border": "#fff,0",
+			            "iconAlignment": "center",
+			            "borderBottom": "#fff,0",
+			            "borderTop": "#ffd8e3f0,1",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "4",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "far",
+			            "borderLeft": "#fff,0",
+			            "lineAlignment": "center",
+			            "borderRight": "#ffd8e3f0,1",
+			            "iconIndex": "0"
+			        },
+			        "head": {
+			            "background": "linear,#ffe9f0f8,#ffc3d8f1,90",
+			            "iconLocation": "left",
+			            "border": "#ff313539,1",
+			            "iconAlignment": "center",
+			            "borderBottom": "#ff5d8cc9,1",
+			            "borderTop": "#fff,1",
+			            "selectedBackground": "#ffff0000",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "inversion",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "linear,#fffff8a9,#ffffd75e,90",
+			            "hoveredMaskBorder": "#ffff0000,1",
+			            "figureBackground": "#ff000000",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#ffff0000",
+			            "foreground": "#ff002f6e",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "center",
+			            "borderLeft": "#fff,1",
+			            "lineAlignment": "center",
+			            "borderRight": "#ff5d8cc9,1",
+			            "iconIndex": "0"
+			        },
+			        "foot": {
+			            "background": "#ffdee2e7",
+			            "paddingRight": "2",
+			            "iconLocation": "left",
+			            "border": "#88888888,1",
+			            "selectedForeground": "#fff",
+			            "iconAlignment": "center",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "iconOffset": "0",
+			            "textAlignment": "near",
+			            "selectedBackground": "#ff696969",
+			            "lineAlignment": "center",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "selectionDisplay": "mask",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "borderTop": "#ff79828b,1",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "contentFit": "auto",
+			            "paddingTop": "2",
+			            "borderRight": "#ff9099a3,1",
+			            "figureBackground": "#ff008800",
+			            "iconPadding": "0",
+			            "paddingBottom": "1",
+			            "iconIndex": "0"
+			        },
+			        "headerBar": {
+			            "background": "#ffd7e6f7",
+			            "iconLocation": "left",
+			            "border": "#fff,0",
+			            "iconAlignment": "center",
+			            "borderBottom": "#fff,0",
+			            "borderTop": "#fff,1",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff498ee1",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff002f6e",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "near",
+			            "borderLeft": "#fff,1",
+			            "lineAlignment": "center",
+			            "borderRight": "#fff,0",
+			            "iconIndex": "0"
+			        },
+			        "footerBar": {
+			            "background": "#ff9cbade",
+			            "iconLocation": "left",
+			            "border": "#fff,0",
+			            "iconAlignment": "center",
+			            "borderBottom": "#fff,0",
+			            "borderTop": "#ffd7e6f7,1",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "near",
+			            "borderLeft": "#fff,0",
+			            "lineAlignment": "center",
+			            "borderRight": "#ffd7e6f7,1",
+			            "iconIndex": "0"
+			        },
+			        "bar": {
+			            "background": "#ffd7e6f7",
+			            "iconLocation": "left",
+			            "border": "#ff313539,0",
+			            "iconAlignment": "center",
+			            "borderBottom": "#ff85a8d0,0",
+			            "borderTop": "#fff,0",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff002f6e",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "near",
+			            "borderLeft": "#fff,1",
+			            "lineAlignment": "center",
+			            "borderRight": "#ff85a8d0,1",
+			            "iconIndex": "0"
+			        },
+			        "panel": {
+			            "background": "#ffd7e6f7",
+			            "iconLocation": "left",
+			            "border": "#ff5d8cc9,1",
+			            "iconAlignment": "center",
+			            "borderBottom": "#ff5d8cc9,1",
+			            "borderTop": "#fff,1",
+			            "selectedBackground": "#ffff0000",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#fffff5a2",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff000000",
+			            "paddingBottom": "1",
+			            "paddingTop": "1",
+			            "paddingRight": "1",
+			            "selectedForeground": "#ffff0000",
+			            "foreground": "#ff002f6e",
+			            "inactiveForeground": "#ff808080",
+			            "line": "#ff5d8cc9,1",
+			            "textAlignment": "center",
+			            "borderLeft": "#fff,1",
+			            "lineAlignment": "center",
+			            "borderRight": "#ff5d8cc9,1",
+			            "iconIndex": "0"
+			        }
+			    },
+			    "indicator": {
+			        "background": "#f4f4f4",
+			        "iconLocation": "left",
+			        "border": "#ececec,1",
+			        "iconAlignment": "center",
+			        "borderBottom": "#dbdbdb,1",
+			        "borderTop": "#dbdbdb,0",
+			        "selectedBackground": "#fff",
+			        "selectedborderLeft": "#9f7bce, 2",
+			        "contentFit": "auto",
+			        "inactiveBackground": "#ffd3d3d3",
+			        "iconOffset": "0",
+			        "selectionDisplay": "mask",
+			        "iconPadding": "0",
+			        "hoveredMaskBackground": "#fff",
+			        "hoveredMaskBorder": "#9f7bce,1",
+			        "figureBackground": "#9f7bce",
+			        "paddingBottom": "7",
+			        "paddingTop": "7",
+			        "paddingRight": "5",
+			        "selectedForeground": "#fff",
+			        "foreground": "#444",
+			        "inactiveForeground": "#fff",
+			        "textAlignment": "center",
+			        "borderLeft": "#f9f9f9,0",
+			        "lineAlignment": "center",
+			        "borderRight": "#ececec,1",
+			        "iconIndex": "0",
+			        "head": {
+			            "background": "linear,#f4f4f4,#f4f4f4,90",
+			            "iconLocation": "left",
+			            "border": "#ececec,0",
+			            "iconAlignment": "center",
+			            "borderBottom": "#dbdbdb,1",
+			            "borderTop": "#888,0",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "10",
+			            "paddingTop": "10",
+			            "paddingRight": "7",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "center",
+			            "borderLeft": "#ffdedede,0",
+			            "lineAlignment": "center",
+			            "borderRight": "#ffdedede,1",
+			            "iconIndex": "0"
+			        },
+			        "foot": {
+			            "background": "#ffdee2e7",
+			            "iconLocation": "left",
+			            "border": "#88888888,1",
+			            "iconAlignment": "center",
+			            "borderBottom": "#ffc6c6c6,1",
+			            "borderTop": "#ff79828b,1",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff002f6e",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "center",
+			            "borderLeft": "#fff,1",
+			            "lineAlignment": "center",
+			            "borderRight": "#ff9099a3,1",
+			            "iconIndex": "0"
+			        }
+			    },
+			    "checkBar": {
+			        "background": "#fff",
+			        "paddingRight": "10",
+			        "iconLocation": "left",
+			        "border": "#ffdedede,1",
+			        "selectedForeground": "#fff",
+			        "iconAlignment": "center",
+			        "foreground": "#9f7bce",
+			        "figureBorder": "#9f7bce, 1",
+			        "inactiveForeground": "#9f7bce",
+			        "borderBottom": "#dbdbdb,1",
+			        "textAlignment": "center",
+			        "line":"#ff9f7bce,1",
+				    "figureBorder":"#ff9f7bce,1",
+				    "figureBackground": "#ff9f7bce",
+			        "selectedBackground": "#ffffffff",
+			        "lineAlignment": "center",
+			        "inactiveBackground": "#9f7bce",
+			        "iconOffset": "0",
+			        "selectionDisplay": "mask",
+			        "hoveredMaskBorder": "#ff9f7bce,1",
+			        "iconPadding": "0",
+			        "hoveredMaskBackground": "#ff9f7bce",
+			        "contentFit": "auto",
+			        "paddingTop": "7",
+			        "borderRight": "#ececec,1",
+			        "paddingBottom": "7",
+			        "iconIndex": "0",
+			        "head": {
+			            "background": "linear,#f4f4f4,#f4f4f4,90",
+			            "iconLocation": "left",
+			            "border": "#ff000000,0",
+			            "iconAlignment": "center",
+			            "borderBottom": "#dbdbdb,1",
+			            "borderTop": "#888,0",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008e00",
+			            "paddingBottom": "5",
+			            "paddingTop": "5",
+			            "paddingRight": "10",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "center",
+			            "borderLeft": "#ffdedede,0",
+			            "lineAlignment": "center",
+			            "borderRight": "#ffdedede,1",
+			            "iconIndex": "0"
+			        },
+			        "foot": {
+			            "background": "#ffdee2e7",
+			            "iconLocation": "left",
+			            "border": "#88888888,1",
+			            "iconAlignment": "center",
+			            "borderBottom": "#ffc6c6c6,1",
+			            "borderTop": "#ff79828b,1",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "center",
+			            "borderLeft": "#fff,1",
+			            "lineAlignment": "center",
+			            "borderRight": "#ff9099a3,1",
+			            "iconIndex": "0"
+			        }
+			    },
+			    "statusBar": {
+			        "background": "#fff",
+			        "paddingRight": "10",
+			        "iconLocation": "left",
+			        "border": "#ff313539,1",
+			        "selectedForeground": "#fff",
+			        "iconAlignment": "center",
+			        "foreground": "#444",
+			        "inactiveForeground": "#ff808080",
+			        "borderBottom": "#dbdbdb,1",
+			        "textAlignment": "center",
+			        "selectedBackground": "#ff696969",
+			        "lineAlignment": "center",
+			        "inactiveBackground": "#ffd3d3d3",
+			        "iconOffset": "0",
+			        "selectionDisplay": "mask",
+			        "hoveredMaskBorder": "#335292f7,1",
+			        "iconPadding": "0",
+			        "hoveredMaskBackground": "#1f5292f7",
+			        "contentFit": "auto",
+			        "paddingTop": "7",
+			        "borderRight": "#ececec,1",
+			        "figureBackground": "#ff008800",
+			        "paddingBottom": "7",
+			        "iconIndex": "0",
+			        "head": {
+			            "background": "linear,#f4f4f4,#f4f4f4,90",
+			            "iconLocation": "left",
+			            "border": "#ececec,0",
+			            "iconAlignment": "center",
+			            "borderBottom": "#dbdbdb,1",
+			            "borderTop": "#888,2",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "figureSize": "1",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "center",
+			            "borderLeft": "#f9f9f9,0",
+			            "lineAlignment": "center",
+			            "borderRight": "#ececec,1",
+			            "iconIndex": "0"
+			        },
+			        "foot": {
+			            "background": "#ffdee2e7",
+			            "iconLocation": "left",
+			            "border": "#88888888,1",
+			            "iconAlignment": "center",
+			            "borderBottom": "#ffc6c6c6,1",
+			            "borderTop": "#ff79828b,1",
+			            "selectedBackground": "#ff696969",
+			            "contentFit": "auto",
+			            "inactiveBackground": "#ffd3d3d3",
+			            "iconOffset": "0",
+			            "selectionDisplay": "mask",
+			            "iconPadding": "0",
+			            "hoveredMaskBackground": "#1f5292f7",
+			            "hoveredMaskBorder": "#335292f7,1",
+			            "figureBackground": "#ff008800",
+			            "paddingBottom": "2",
+			            "paddingTop": "2",
+			            "paddingRight": "2",
+			            "selectedForeground": "#fff",
+			            "foreground": "#ff000000",
+			            "inactiveForeground": "#ff808080",
+			            "textAlignment": "center",
+			            "borderLeft": "#fff,1",
+			            "lineAlignment": "center",
+			            "borderRight": "#ff9099a3,1",
+			            "iconIndex": "0"
+			        }
+			    },
+			    "selection": {
+			        "background": "#05000000",
+			        "paddingRight": "0",
+			        "iconLocation": "left",
+			        "border": "#1dbdbdb,1",
+			        "borderLeft": "#1dbdbdb,1",
+			        "selectedForeground": "#777",
+			        "iconAlignment": "center",
+			        "foreground": "#444",
+			        "inactiveForeground": "#444",
+			        "iconOffset": "0",
+			        "textAlignment": "center",
+			        "selectedBackground": "#f4f4f4",
+			        "lineAlignment": "center",
+			        "inactiveBackground": "#f4f4f4",
+			        "selectionDisplay": "mask",
+			        "hoveredMaskBorder": "#dbdbdb,1",
+			        "iconPadding": "0",
+			        "hoveredMaskBackground": "#1f5292f7",
+			        "contentFit": "auto",
+			        "paddingTop": "0",
+			        "figureBackground": "#444",
+			        "paddingBottom": "0",
+			        "iconIndex": "0"
+			    }
+		    });
+			var fields = [
+			    {
+			        "fieldName": "ImageButton"
+			    },
+			    {
+			        "fieldName": "OrderID",
+			        "dataType": "text"
+			    },
+			    {
+			        "fieldName": "CustomerID"
+			    },
+			    {
+			        "fieldName": "CustomerID2"
+			    },
+			    {
+			        "fieldName": "EmployeeID"
+			    },
+			    {
+			        "fieldName": "OrderDate",
+			        "dataType": "datetime",
+			        "datetimeFormat": "yyyy/MM/dd"
+			    },
+			    {
+			        "fieldName": "CompanyName"
+			    },
+			    {
+			        "fieldName": "Country"
+			    },
+			    {
+			        "fieldName": "Phone"
+			    }
+			];
+			dataProvider.setFields(fields);
+
+			var columns = [
+				  {
+			        "name": "ImageButton",
+			        "fieldName": "ImageButton",
+			        "width": "100",
+			        "button": "image",
+			        "dynamicStyles": [
+			            {
+			                "criteria": [
+			                    "value = '지급일변경'",
+			                    "value = '변경'"
+			                ],
+			                "styles": [
+			                    "renderer=buttons1",
+			                    "renderer=buttons2"
+			                ]
+			            }
+			        ],
+			        "styles": {
+			            "textAlignment": "center"
+			        },
+			        "header": {
+			            "text": "동적 버튼"
+			        }
+			    },
+			    {
+			        "name": "EmployeeID",
+			        "fieldName": "EmployeeID",
+			        "width": "150",
+			        "button": "image",
+			        "imageButtons": {
+			            "width": 75,
+			            "images": [
+			                {
+			                    "name": "지급일변경",
+			                    "up": "resources/images/table/change1.png",
+			                    "hover": "resources/images/table/change1.png",
+			                    "down": "resources/images/table/change1.png"
+			                },
+			                {
+			                    "name": "변경",
+			                    "up": "resources/images/table/change2.png",
+			                    "hover": "resources/images/table/change2.png",
+			                    "down": "resources/images/table/change2.png"
+			                }
+			            ]
+			        },
+			        "styles": {
+			            "textAlignment": "center"
+			        },
+			        "header": {
+			            "text": "Employee ID"
+			        }
+			    },
+			    {
+			        "type": "group",
+			        "name": "GroupOrder",
+			        "orientation": "vertical",
+			        "width": 250,
+			        "header": {
+			            "visible": false
+			        },
+			        "columns": [
+			            {
+			                "type": "group",
+			                "name": "GroupIds",
+			                "header": {
+			                    "fixedHeight": 20,
+			                    "visible": false
+			                },
+			                "columns": [
+			                    {
+			                        "name": "OrderID",
+			                        "fieldName": "OrderID",
+			                        "type": "data",
+			                        "width": "90",
+			                        "styles": {
+			                            "textAlignment": "center"
+			                        },
+			                        "header": {
+			                            "text": "Order",
+			                        }
+			                    },
+			                    {
+			                        "name": "CustomerID",
+			                        "fieldName": "CustomerID",
+			                        "type": "data",
+			                        "width": "130",
+			                        "styles": {
+			                            "textAlignment": "center"
+			                        },
+			                        "header": {
+			                            "text": "Customer ID"
+			                        }
+			                    },
+			                    {
+			                        "name": "EmployeeID",
+			                        "fieldName": "EmployeeID",
+			                        "type": "data",
+			                        "width": "100",
+			                        "styles": {
+			                            "textAlignment": "center"
+			                        },
+			                        "header": {
+			                            "text": "Employee ID"
+			                        }
+			                    }
+			                ]
+			            },
+			            {
+			                "name": "OrderDate",
+			                "fieldName": "OrderDate",
+			                "type": "data",
+			                "width": "130",
+			                "styles": {
+			                    "textAlignment": "center"
+			                    
+			                }
+			            }
+			        ]
+			    },
+			    {
+			        "name": "CustomerID",
+			        "fieldName": "CustomerID",
+			        "width": "110",
+			        "styles": {
+			            "textAlignment": "center"
+			        },
+			        "button": "popup",
+			        "popupMenu": "customerPopup",
+			        "header": {
+			            "text": "Customer ID"
+			        }
+			    },
+			    {
+			        "name": "Country",
+			        "fieldName": "Country",
+			        "width": "100",
+			        "styles": {
+			            "textAlignment": "center",
+			            "datetimeFormat": "hh:mm:ss"
+			        },
+			        "header": {
+			            "text": "Country"
+			        }
+			    },
+			    {
+			        "name": "OrderDate",
+			        "fieldName": "OrderDate",
+			        "width": "130",
+			        "styles": {
+			            "textAlignment": "center",
+			            "datetimeFormat": "yyyy/MM/dd"
+			        },
+			        "header": {
+			            "text": "Order Date"
+			        }
+			    },
+			    {
+			        "name": "CompanyName",
+			        "fieldName": "CompanyName",
+			        "width": "180",
+			        "styles": {
+			            "textAlignment": "center"
+			        },
+			        "header": {
+			            "text": "Company Name"
+			        }
+			    },
+			    {
+			        "name": "Phone",
+			        "fieldName": "Phone",
+			        "width": "100",
+			        "styles": {
+			            "textAlignment": "center"
+			        },
+			        "header": {
+			            "text": "Phone"
+			        }
+			    }
+
+			];	
+			gridView.setColumns(columns);
+			gridView.setColumnProperty("ImageButton", "alwaysShowButton", "true");
+			gridView.setColumnProperty("EmployeeID", "alwaysShowButton", "true");
+			gridView.setColumnProperty("OrderID", "alwaysShowButton", "true");
+			gridView.setColumnProperty("CustomerID", "alwaysShowButton", "true");
+			gridView.onImageButtonClicked =  function (grid, itemIndex, column, buttonIndex, name) {
+			    alert("onImageButtonClicked: " + itemIndex + ", " + column.name+", " + buttonIndex + ", " + name);
+			};
+			gridView.onCellButtonClicked = function (grid, itemIndex, column) {
+			    alert("CellButton Clicked: itemIndex=" + itemIndex + ", fieldName=" + column.fieldName);
+			};
+			gridView.onMenuItemClicked = function (grid, data) {
+			    alert(data.label);
+			};
+			dataProvider.setRowCount(100, false, ['테스트', '국산', '몰라', '가즈아', '102938109', '2018/09/18', '010-1234-5678', 'test', 'test', 'test']);
+			gridView.onRowCountChanged = function (gridView, newCount) {
+			    var gridDiv = document.getElementById("realgrid");
+			    var rowHeight = grdMain.getDisplayOptions().rowHeight ? grdMain.getDisplayOptions().rowHeight : 23;  // row의 높이
+			    var panelHeight = 0;    // 그리드 panel이 있는 경우 높이
+			    var headerHeight = 23;  // header영역의 높이
+			    var footerHeight = 0;   // footer영역의 높이
+
+			    gridDiv.style.height = (( Math.max(newCount,10)*rowHeight)+panelHeight+headerHeight+footerHeight).toString()+"px";
+			    grdMain.resetSize();  // &lt;= 상위 div의 크기가 변경되면 그리드 크기를 변경
+			};
+		});   
+		
+	</script>
+	<script type="text/javascript">init();</script>
+
+</body>
+
+</html>
