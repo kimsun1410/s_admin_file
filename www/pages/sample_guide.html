@@ -1,0 +1,782 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="http://image.wemakeprice.com/favicon_v01.ico">
+	<meta name="title" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="og:type" property="og:type" content="website">
+	<meta name="og:url" property="og:url" content="http:">
+	<meta name="og:image" property="og:image" content="http:/">
+	<meta name="og:title" property="og:title" content="">
+	<meta name="og:description" property="og:description" content="위메프 - 서비스 정산시스템">
+	<title>위메프 - 서비스 정산시스템</title>
+	<link rel="stylesheet" href="resources/css/common/s_common.css" media="all">
+	<link rel="stylesheet" href="resources/css/common/s_datapicker.css">
+	<link rel="stylesheet" href="resources/css/plugin/jquery.mCustomScrollbar.css">
+	<!--[if lt IE 9]>
+	    <script src="resources/js/placeholder.js"></script>
+	    <script src="resources/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="skipnavigation">
+		<ul>
+			<li><a href="#contents">본문 바로가기</a></li>
+			<li><a href="#sidenav">대 메뉴 바로가기</a></li>
+		</ul>
+	</div>
+	<hr>
+	<div id="wrap">
+		<div id="header">
+			<div class="inner_wrap">
+				<button class="ico all_menu">전체보기</button>
+				<h1 class="logo"><a href="#none" class="tit">서비스 정산시스템</a></h1>
+				<div class="util_top">
+					<ul class="util_wrap">
+						<li>
+							<span>안녕하세요.<b>홍길동</b>님</span>
+						</li>
+						<li><a href="#none">정보수정</a></li>
+						<li><a href="#none">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="sidenav">
+			<div id="nav_inner">
+				<div id="inner_box" class="inner_left">
+					<ul class="list_snb">
+						<li>
+							<h2>PG 대사</h2>
+							<div class="sub_menu">
+								<ul class="depth">
+									<li><a href="">승인 대사</a></li>
+									<li><a href="#none"  class="selected">정산 대사</a></li>
+									<li><a href="#none">상세조회</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>정산관리</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">매출 관리</a></li>
+									<li><a href="#none">정산대상 관리</a></li>
+									<li class="selected"><a href="#none">지급대상 관리</a></li>
+									<li><a href="#none">역정산 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>세금계산서 관리</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">발행대상 관리</a></li>
+									<li><a href="#none">발행제외 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>운영 관리</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">임의조정 관리</a></li>
+									<li><a href="#none">선입 관리</a></li>
+									<li><a href="#none">지출 결의서</a></li>
+									<li><a href="#none">미사용 환불 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>마케팅 관리</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">영업대행 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>회계 대사</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">일마감 대사</a></li>
+									<li><a href="#none">전표 대사</a></li>
+									<li><a href="#none">주문 조회</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="contents">
+				<div class="section">
+					<h3 class="title">정산 대사</h3>
+					<div class="box_wrap">
+						<ul class="tab">
+							<li class="active">
+								<a href="#none" class="tab1">개별 딜 정산 대상관리</a>
+							</li>
+							<li>
+								<a href="#none" class="tab2">파트너 정산 대상관리</a>
+							</li>
+							<li>
+								<a href="#none" class="tab3">탭 오버 하단라인</a>
+							</li>
+							<li>
+								<a href="#none" class="tab3">탭4번째 메뉴</a>
+							</li>
+						</ul>
+					</div>
+
+
+	                <!-- 검색박스 여러줄 공통 스타일 -->
+					<form method="">
+						<div class="search_option">
+							<div class="option_box">
+								<dl>
+									<dt>사업부<span class="ico dotted">*</span></dt>
+									<dd>
+										<input type="text" class="iText" placeholder="입력상태 가능">
+									</dd>
+								</dl>
+								<dl>
+									<dt>검색기간<span class="ico dotted">*</span></dt>
+									<dd>
+										<div class="sel_wrap sel_w2s">
+											<label for="select">선택하세요.</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option>10건</option>
+												<option>20건</option>
+												<option>30건</option>
+												<option>40건</option>
+												<option>50건</option>
+											</select>
+										</div>
+										<span class="calender">
+											<span class="iw iText_w1">
+												<input type="text" id="datepicker_str">
+											</span>
+											<span class="dash">~</span>
+											<span class="iw iText_w1">
+												<input type="text" id="datepicker_end">
+											</span>
+										</span>
+										<span class="list_btn">
+					                		<a href="#none" class="on">오늘</a>
+					                		<a href="#none">이번주</a>
+					                		<a href="#none">이번달</a>
+					                		<a href="#none">3개월 전</a>
+					                	</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>검색기간<span class="ico dotted">*</span></dt>
+									<dd>
+										<div class="sel_wrap sel_w3">
+											<label for="select">선택하세요.</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option>10건</option>
+												<option>20건</option>
+												<option>30건</option>
+												<option>40건</option>
+												<option>50건</option>
+											</select>
+										</div>
+										<span class="calender">
+											<span class="iw iText_w1">
+												<input type="text" id="datepicker_str">
+											</span>
+											<span class="dash">~</span>
+											<span class="iw iText_w1">
+												<input type="text" id="datepicker_end">
+											</span>
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>입력조건</dt>
+									<dd>
+										<div class="sel_wrap sel_w3">
+											<label for="select">딜명</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option value="선택1">선택1</option>
+												<option value="선택2">선택2</option>
+												<option value="선택3">선택3</option>
+												<option value="선택4">선택4</option>
+												<option value="선택5">선택5</option>
+											</select>
+										</div>
+										<div class="sel_wrap sel_w3">
+											<label for="select">딜명</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option value="선택1">선택1</option>
+												<option value="선택2">선택2</option>
+												<option value="선택3">선택3</option>
+												<option value="선택4">선택4</option>
+												<option value="선택5">선택5</option>
+											</select>
+										</div>
+										<span class="iw boxiText_w2">
+											<input type="text" class="iText" placeholder="입력상태 가능">
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>입력조건<span class="ico dotted">*</span></dt>
+									<dd>
+										<div class="sel_wrap sel_w3">
+											<label for="select">딜명</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option value="선택1">선택1</option>
+												<option value="선택2">선택2</option>
+												<option value="선택3">선택3</option>
+												<option value="선택4">선택4</option>
+												<option value="선택5">선택5</option>
+											</select>
+										</div>
+										<div class="sel_wrap sel_w3">
+											<label for="select">딜명</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option value="선택1">선택1</option>
+												<option value="선택2">선택2</option>
+												<option value="선택3">선택3</option>
+												<option value="선택4">선택4</option>
+												<option value="선택5">선택5</option>
+											</select>
+										</div>
+										<div class="sel_wrap sel_w3">
+											<label for="select">딜명</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option value="선택1">선택1</option>
+												<option value="선택2">선택2</option>
+												<option value="선택3">선택3</option>
+												<option value="선택4">선택4</option>
+												<option value="선택5">선택5</option>
+											</select>
+										</div>
+										<span class="iw boxiText_w1">
+											<input type="text" class="iText" placeholder="입력상태 가능">
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>입력조건<span class="ico dotted">*</span></dt>
+									<dd>
+										<div class="sel_wrap sel_w3">
+											<label for="select">선택하세요</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option>선택1</option>
+												<option>선택2</option>
+												<option>선택3</option>
+												<option>선택4</option>
+												<option>선택5</option>
+											</select>
+										</div>
+										<span class="iw boxiText_w3">
+											<input type="text" class="iText" placeholder="입력상태 불가능" disabled="disabled">
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>입력조건</dt>
+									<dd>
+										<div class="sel_wrap sel_w3">
+											<label for="select">딜명</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option>선택1</option>
+												<option>선택2</option>
+												<option>선택3</option>
+												<option>선택4</option>
+												<option>선택5</option>
+											</select>
+										</div>
+										<span class="iw boxiText_w3">
+											<input type="text" class="iText" placeholder="입력상태 가능" value="입력중 상태">
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>물류구분</dt>
+									<dd>
+										<span class="chk_box">
+											<input type="checkbox" class="blind" name="group_a" id="chk_01">
+											<label for="chk_01" class="icheckbox"><span class="ichk"></span>선택전</label>
+										</span>
+										<span class="chk_box">
+											<input type="checkbox" class="blind" name="group_a" id="chk_02">
+											<label for="chk_02" class="icheckbox checked"><span class="ichk"></span>선택전 상태</label>
+										</span>
+										<span class="chk_box">
+											<input type="checkbox" class="blind" name="group_a" id="chk_03" disabled="disabled">
+											<label for="chk_03" class="icheckbox focus"><span class="ichk"></span>선택해제 불가</label>
+										</span>
+										<span class="chk_box">
+											<input type="checkbox" class="blind" name="group_a" id="chk_04" disabled="disabled">
+											<label for="chk_04" class="icheckbox"><span class="ichk"></span>선택불가</label>
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>세부조건</dt>
+									<dd>
+										<span class="chk_box">
+											<input type="radio" class="blind" name="group_b" id="radio_01">
+											<label for="radio_01" class="iradio"><span class="ichk"></span>선택전</label>
+										</span>
+										<span class="chk_box">
+											<input type="radio" class="blind" name="group_b" id="radio_02">
+											<label for="radio_02" class="iradio checked"><span class="ichk"></span>선택전 상태</label>
+										</span>
+										<span class="chk_box">
+											<input type="radio" class="blind" name="group_b" id="radio_03" disabled="disabled">
+											<label for="radio_03" class="iradio focus rdo_disabled"><span class="ichk"></span>선택해제 불가</label>
+										</span>
+										<span class="chk_box">
+											<input type="radio" class="blind" name="group_b" id="radio_04" disabled="disabled">
+											<label for="radio_04" class="iradio rdo_disabled"><span class="ichk"></span>선택불가</label>
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>세부조건</dt>
+									<dd>
+										<div class="sel_wrap sel_w2">
+											<label for="select">년도</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option>선택1</option>
+												<option>선택2</option>
+												<option>선택3</option>
+												<option>선택4</option>
+												<option>선택5</option>
+											</select>
+										</div>
+										<div class="sel_wrap sel_w1">
+											<label for="select">월</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option>선택1</option>
+												<option>선택2</option>
+												<option>선택3</option>
+												<option>선택4</option>
+												<option>선택5</option>
+											</select>
+										</div>
+										<span class="dash">~ </span>
+										<div class="sel_wrap sel_w2">
+											<label for="select">년도</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option>선택1</option>
+												<option>선택2</option>
+												<option>선택3</option>
+												<option>선택4</option>
+												<option>선택5</option>
+											</select>
+										</div>
+										<div class="sel_wrap sel_w1">
+											<label for="select">월</label>
+											<select class="iselect" title="셀렉트 박스 선택">
+												<option>선택1</option>
+												<option>선택2</option>
+												<option>선택3</option>
+												<option>선택4</option>
+												<option>선택5</option>
+											</select>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>세부조건</dt>
+									<dd class="box_check">
+										<span class="chk_box">
+											<input type="radio" class="blind" name="group_c" id="radio1" data-target=".year">
+											<label for="radio1" class="iradio checked"><span class="ichk"></span>년도 상태</label>
+										</span>
+										<span class="chk_box">
+											<input type="radio" class="blind" name="group_c" id="radio2" data-target=".month">
+											<label for="radio2" class="iradio"><span class="ichk"></span>일별 상태</label>
+										</span>
+										<div class="chk_day year">
+											<div class="sel_wrap sel_w2">
+												<label for="select">년도</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>선택1</option>
+													<option>선택2</option>
+													<option>선택3</option>
+													<option>선택4</option>
+													<option>선택5</option>
+												</select>
+											</div>
+											<div class="sel_wrap sel_w1">
+												<label for="select">월</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>선택1</option>
+													<option>선택2</option>
+													<option>선택3</option>
+													<option>선택4</option>
+													<option>선택5</option>
+												</select>
+											</div>
+											<span class="dash">~ </span>
+											<div class="sel_wrap sel_w2">
+												<label for="select">년도</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>선택1</option>
+													<option>선택2</option>
+													<option>선택3</option>
+													<option>선택4</option>
+													<option>선택5</option>
+												</select>
+											</div>
+											<div class="sel_wrap sel_w1">
+												<label for="select">월</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>선택1</option>
+													<option>선택2</option>
+													<option>선택3</option>
+													<option>선택4</option>
+													<option>선택5</option>
+												</select>
+											</div>
+										</div>
+										<div class="chk_day month" style="display:none;">
+											<div class="sel_wrap sel_w2">
+												<label for="select">년도</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>선택1</option>
+													<option>선택2</option>
+													<option>선택3</option>
+													<option>선택4</option>
+													<option>선택5</option>
+												</select>
+											</div>
+											<div class="sel_wrap sel_w1">
+												<label for="select">월</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>선택1</option>
+													<option>선택2</option>
+													<option>선택3</option>
+													<option>선택4</option>
+													<option>선택5</option>
+												</select>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="option_btn">
+								<span class="btn_pack btn_medium btn_type4">
+			                		<button type="submit"><i class="icon search"></i>검색</button>
+			                	</span>
+			                	<span class="btn_pack btn_medium btn_type">
+			                		<button type="submit">초기화</button>
+			                	</span>
+							</div>
+						</div>
+					</form>
+					<!-- 검색박스 여러줄 공통 스타일 -->
+					
+					<h4 class="title">정산 대상관리</h4>
+					<div class="md_tbl">
+                		<!-- 검색 건수 스타일 -->
+                		<p class="desc">전체<em>380</em>건</p>
+                		<!-- 검색 건수 스타일 -->
+
+                		<!-- 왼쪽 버튼 스타일 -->
+	                	<div class="md_title">
+	                		<span class="btn_pack btn_small btn_type2">
+		                		<a hhref="#none" title="전체선택">선택 정산처리</a>
+		                	</span>
+		                	<span class="btn_pack btn_small btn_type2">
+		                		<a hhref="#none" title="전체선택">선택 보류처리</a>
+		                	</span>
+		                	<span class="btn_pack btn_small btn_type2">
+		                		<a hhref="#none" title="전체선택">선택 보류해제</a>
+		                	</span>
+	                	</div>
+	                	<!-- 왼쪽 버튼 스타일 -->
+
+	                	<!-- 오른쪽 버튼 스타일 -->
+	                	<div class="desc_tr btn">
+	                		<span class="btn_pack btn_small btn_type">
+		                		<button type="submit">양식 다운로드</button>
+		                	</span>
+	                		<span class="btn_pack btn_small btn_type">
+		                		<button type="submit">엑셀 다운로드</button>
+		                	</span>
+		                	<div class="sel_wrap sel_w1 disabled">
+								<label for="list_num">5건</label>
+								<select class="iselect" title="셀렉트 박스 선택">
+									<option>10건</option>
+									<option>50건</option>
+									<option>100건</option>
+									<option>200건</option>
+									<option>500건</option>
+								</select>
+							</div>
+	                	</div>
+	                	<!-- 오른쪽 버튼 스타일 -->
+
+	                	<div class="tbl_wrap">
+							<table class="tbl">
+								<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+								<colgroup>
+									<col style="width:210px">
+									<col style="width:145px">
+									<col style="width:115px">
+									<col style="width:auto">
+								</colgroup>
+								<thead>
+									<tr>
+									    <th scope="col">업체ID</th>
+									    <th scope="col">업체명</th>
+									    <th scope="col">사업자번호</th>
+									    <th scope="col" class="last">제외사유</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="align_l">
+											<div class="tbl_search">
+												<span class="iw iText_w8">
+													<input type="text" class="iText" placeholder="wemakeprice">
+												</span>
+												<span class="btn_pack btn_small btn_type3">
+							                		<button type="submit">검색</button>
+							                	</span>
+						                	</div>
+										</td>
+									    <td>(주)아마준</td>
+									    <td>987-65-41230</td>
+									    <td>
+									    	<div class="tbl_save">
+										    	<input type="text" class="iText" placeholder="입력상태 가능">
+										    	<span class="btn_pack btn_small btn_type2">
+							                		<button type="submit">저장</button>
+							                	</span>
+						                	</div>
+									    </td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="pagination">
+					        <a href="#none" class="first">처음</a>
+					        <a href="#none" class="num on" title="현재 페이지"><span>1</span></a>
+					        <a href="#none" class="num"><span>2</span></a>
+					        <a href="#none" class="num"><span>3</span></a>
+					        <a href="#none" class="num"><span>4</span></a>
+					        <a href="#none" class="num"><span>5</span></a>
+					        <a href="#none" class="num"><span>6</span></a>
+					        <a href="#none" class="num"><span>7</span></a>
+					        <a href="#none" class="num"><span>8</span></a>
+					        <a href="#none" class="num"><span>9</span></a>
+					        <a href="#none" class="num"><span>10</span></a>
+					        <a href="#none" class="last">마지막</a>
+					    </div>
+					</div>
+
+					<div class="md_tbl">	
+                		<!-- 검색 건수 스타일 -->
+                		<div class="md_title">
+                			<p class="desc">전체<em>380</em>건</p>
+                		</div>
+                		<!-- 검색 건수 스타일 -->
+
+	                	<!-- 오른쪽 버튼 스타일 -->
+	                	<div class="desc_tr btn">
+		                	<div class="sel_wrap sel_w1">
+								<label for="list_num">200건</label>
+								<select class="iselect" title="셀렉트 박스 선택">
+									<option>10건</option>
+									<option>50건</option>
+									<option>100건</option>
+									<option>200건</option>
+									<option>500건</option>
+								</select>
+							</div>
+	                	</div>
+	                	<!-- 오른쪽 버튼 스타일 -->
+
+	                	<div class="tbl_wrap">
+							<table class="tbl">
+								<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+								<colgroup>
+									<col style="width:210px">
+									<col style="width:145px">
+									<col style="width:115px">
+									<col style="width:auto">
+								</colgroup>
+								<thead>
+									<tr>
+									    <th scope="col">업체ID</th>
+									    <th scope="col">업체명</th>
+									    <th scope="col">사업자번호</th>
+									    <th scope="col" class="last">제외사유</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="align_l">
+											<div class="tbl_search">
+												<span class="iw iText_w8">
+													<input type="text" class="iText" placeholder="wemakeprice">
+												</span>
+												<span class="btn_pack btn_small btn_type3">
+							                		<button type="submit">검색</button>
+							                	</span>
+						                	</div>
+										</td>
+									    <td>(주)아마준</td>
+									    <td>987-65-41230</td>
+									    <td>
+									    	<div class="tbl_save">
+										    	<input type="text" class="iText" placeholder="입력상태 가능">
+										    	<span class="btn_pack btn_small btn_type2">
+							                		<button type="submit">저장</button>
+							                	</span>
+						                	</div>
+									    </td>
+									</tr>
+									<tr>
+										<td colspan="4" class="no_data">
+											<p>검색 결과가 존재하지 않습니다.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="md_tbl">			
+                		<!-- 검색 건수 스타일 -->
+                		<div class="md_title">
+                			<p class="desc">전체<em>380</em>건</p>
+                		</div>
+                		<!-- 검색 건수 스타일 -->
+
+	                	<!-- 오른쪽 버튼 스타일 -->
+	                	<div class="desc_tr btn">
+		                	<div class="sel_wrap sel_w1">
+								<label for="list_num">200건</label>
+								<select class="iselect" title="셀렉트 박스 선택">
+									<option>10건</option>
+									<option>50건</option>
+									<option>100건</option>
+									<option>200건</option>
+									<option>500건</option>
+								</select>
+							</div>
+	                	</div>
+	                	<!-- 오른쪽 버튼 스타일 -->
+
+	                	<div class="tbl_wrap">
+							<table class="tbl">
+								<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+								<colgroup>
+									<col style="width:45px">
+									<col style="width:100px">
+									<col style="width:90px">
+									<col style="width:90px">
+									<col style="width:90px">
+									<col style="width:100px">
+									<col style="width:120px">
+									<col style="width:120px">
+									<col style="width:140px">
+									<col style="width:auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">
+											<div class="tbl_chk">
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_a" id="chk_all">
+													<label for="chk_all" class="icheckbox"><span class="ichk"></span>&nbsp;</label>
+												</span>
+											</div>
+										</th>
+									    <th scope="col">업체ID</th>
+									    <th scope="col">업체명</th>
+									    <th scope="col">딜ID</th>
+									    <th scope="col">딜명</th>
+									    <th scope="col">정산주기</th>
+									    <th scope="col">판매시작일</th>
+									    <th scope="col">판매종료일</th>
+									    <th scope="col">최초배송완료일</th>
+									    <th scope="col" class="last">별도청구</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="tbl_chk">
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_a" id="chk_all">
+													<label for="chk_all" class="icheckbox"><span class="ichk"></span>&nbsp;</label>
+												</span>
+											</div>
+										</td>
+										<td><input type="text" class="iText" placeholder=""></td>
+										<td><input type="text" class="iText" placeholder=""></td>
+										<td>4</td>
+										<td>
+											<div class="sel_wrap">
+												<label for="default">선택</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>test01</option>
+													<option>test02</option>
+													<option>test03</option>
+													<option>test04</option>
+													<option>test05</option>
+												</select>
+											</div>
+										</td>
+										<td>6</td>
+										<td>7</td>
+										<td>
+											<div class="sel_wrap">
+												<label for="default">선택</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>test01</option>
+													<option>test02</option>
+													<option>test03</option>
+													<option>test04</option>
+													<option>test05</option>
+												</select>
+											</div>
+										</td>
+										<td>9</td>
+										<td>10</td>
+									</tr>
+									<tr>
+										<td colspan="10" class="no_data">
+											<p>검색 결과가 존재하지 않습니다.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div id="footer">
+			<div></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="resources/js/ui-common.js"></script>
+	<script type="text/javascript">init();</script>
+
+</body>
+
+</html>

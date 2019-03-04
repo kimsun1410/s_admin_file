@@ -24,8 +24,8 @@
 <body>
 	<div id="skipnavigation">
 		<ul>
-		<li><a href="#contents">본문 바로가기</a></li>
-		<li><a href="#gnb">대 메뉴 바로가기</a></li>
+			<li><a href="#contents">본문 바로가기</a></li>
+			<li><a href="#sidenav">대 메뉴 바로가기</a></li>
 		</ul>
 	</div>
 	<hr>
@@ -33,7 +33,7 @@
 		<div id="header">
 			<div class="inner_wrap">
 				<button class="ico all_menu">전체보기</button>
-				<h1 class="logo"><a href="#none">서비스 정산시스템</a></h1>
+				<h1 class="logo"><a href="#none" class="tit">서비스 정산시스템</a></h1>
 				<div class="util_top">
 					<ul class="util_wrap">
 						<li>
@@ -50,17 +50,17 @@
 				<div id="inner_box" class="inner_left">
 					<ul class="list_snb">
 						<li>
-							<h2><a href="#none">PG 대사</a></h2>
+							<h2>PG 대사</h2>
 							<div class="sub_menu">
 								<ul class="depth">
 									<li><a href="">승인 대사</a></li>
-									<li class="selected"><a href="#none">정산 대사</a></li>
+									<li><a href="#none"  class="selected">정산 대사</a></li>
 									<li><a href="#none">상세조회</a></li>
 								</ul>
 							</div>
 						</li>
 						<li>
-							<h2><a href="#none">정산관리</a></h2>
+							<h2>정산관리</h2>
 							<div class="sub-menu">
 								<ul class="depth">
 									<li><a href="#none">매출 관리</a></li>
@@ -71,7 +71,7 @@
 							</div>
 						</li>
 						<li>
-							<h2><a href="#none">세금계산서 관리</a></h2>
+							<h2>세금계산서 관리</h2>
 							<div class="sub-menu">
 								<ul class="depth">
 									<li><a href="#none">발행대상 관리</a></li>
@@ -80,7 +80,7 @@
 							</div>
 						</li>
 						<li>
-							<h2><a href="#none">운영 관리</a></h2>
+							<h2>운영 관리</h2>
 							<div class="sub-menu">
 								<ul class="depth">
 									<li><a href="#none">임의조정 관리</a></li>
@@ -91,7 +91,7 @@
 							</div>
 						</li>
 						<li>
-							<h2><a href="#none">마케팅 관리</a></h2>
+							<h2>마케팅 관리</h2>
 							<div class="sub-menu">
 								<ul class="depth">
 									<li><a href="#none">영업대행 관리</a></li>
@@ -99,7 +99,7 @@
 							</div>
 						</li>
 						<li>
-							<h2><a href="#none">회계 대사</a></h2>
+							<h2>회계 대사</h2>
 							<div class="sub-menu">
 								<ul class="depth">
 									<li><a href="#none">일마감 대사</a></li>
@@ -697,6 +697,14 @@
 		                		<button type="submit">취소</button>
 		                	</span>
 
+		                	<span class="btn_pack btn_smid btn_type4">
+		                		<button type="submit">저장</button>
+		                	</span>
+
+		                	<span class="btn_pack btn_smid btn_type">
+		                		<button type="submit">초기화</button>
+		                	</span>
+
 		                </div>
 					</div>
 
@@ -757,34 +765,31 @@
 			                	</div>
 			                	<!-- 테이블 타이틀 스타일 -->
 
-			                	<!-- 검색 건수 스타일 -->
-			                	<div class="desc_tr">
-			                		<p class="desc">전체<em>380</em>건</p>
-			                	</div>
-			                	<!-- 검색 건수 스타일 -->
-
 			                	<div class="tbl_wrap">
 									<table class="tbl">
 										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
 										<colgroup>
-											<col style="width:210px">
-											<col style="width:145px">
-											<col style="width:115px">
+											<col style="width:151px">
+											<col style="width:169px">
+											<col style="width:169px">
+											<col style="width:auto">
+											<col style="width:auto">
 											<col style="width:auto">
 										</colgroup>
 										<thead>
 											<tr>
-											    <th scope="col">업체ID<span class="ico dotted">*</span></th>
-											    <th scope="col">업체명</th>
-											    <th scope="col">사업자번호</th>
-											    <th scope="col" class="last">제외사유</th>
+											    <th scope="col">딜ID<span class="ico dotted">*</span></th>
+											    <th colspan="2" scope="col">딜명</th>
+											    <th scope="col">옵션ID</th>
+											    <th scope="col">계산서 대상여부</th>
+											    <th scope="col" class="last">유형</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td class="align_l">
 													<div class="tbl_search">
-														<span class="iw iText_w8">
+														<span class="iw iText_w6m">
 															<input type="text" class="iText" placeholder="wemakeprice">
 														</span>
 														<span class="btn_pack btn_small btn_type3">
@@ -792,13 +797,59 @@
 									                	</span>
 								                	</div>
 												</td>
-											    <td>(주)아마준</td>
-											    <td>987-65-41230</td>
+											    <td colspan="2">단 하루 최대 31%할인! 세타필 유아로션/크림레스토라덤</td>
 											    <td>
+											    	<div class="sel_wrap">
+														<label for="default">선택</label>
+														<select class="iselect" title="셀렉트 박스 선택">
+															<option>test01</option>
+															<option>test02</option>
+															<option>test03</option>
+															<option>test04</option>
+															<option>test05</option>
+														</select>
+													</div>
+											    </td>
+											    <td>
+											    	<div class="sel_wrap">
+														<label for="default">선택</label>
+														<select class="iselect" title="셀렉트 박스 선택">
+															<option>test01</option>
+															<option>test02</option>
+															<option>test03</option>
+															<option>test04</option>
+															<option>test05</option>
+														</select>
+													</div>
+											    </td>
+											    <td>
+											    	<div class="sel_wrap">
+														<label for="default">선택</label>
+														<select class="iselect" title="셀렉트 박스 선택">
+															<option>test01</option>
+															<option>test02</option>
+															<option>test03</option>
+															<option>test04</option>
+															<option>test05</option>
+														</select>
+													</div>
+											    </td>
+											</tr>
+											<tr>
+												<th>구분</th>
+												<th>조정금액</th>
+												<th>조정수수료</th>
+												<th colspan="3">조정사유</th>
+											</tr>
+											<tr>
+												<td>&nbsp;</td>
+											    <td>
+											    	<input type="text" class="iText" placeholder="입력상태 가능">
+											    </td>
+											    <td>&nbsp;</td>
+											    <td colspan="3">
 											    	<div class="tbl_save">
-												    	<span class="iw iText_w9">
-												    		<input type="text" class="iText" placeholder="입력상태 가능">
-												    	</span>
+												    	<input type="text" class="iText" placeholder="제외사유 (최대 100자)">
 												    	<span class="btn_pack btn_small btn_type2">
 									                		<button type="submit">저장</button>
 									                	</span>
@@ -811,7 +862,485 @@
 							</div>
 							<!-- 테이블 공통 스타일 -->
 
-							<br><br>
+							<br>
+							<!-- 테이블 공통 건수, 버튼 스타일 합계  -->
+		                	<div class="md_tbl">
+								
+								<!-- 테이블 타이틀 스타일 -->
+			                	<div class="md_title">
+			                		<h4 class="title">합계 내역</h4>
+			                	</div>
+			                	<!-- 테이블 타이틀 스타일 -->
+
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:210px">
+											<col style="width:145px">
+											<col style="width:115px">
+											<col style="width:auto">
+										</colgroup>
+										<tbody>
+											<tr>
+											    <th rowspan="n+1" scope="col" class="rowsp">업체ID</th>
+											    <th scope="col">업체명</th>
+											    <th scope="col">사업자번호</th>
+											    <th scope="col">사업자번호</th>
+											    <th scope="col" class="last">제외사유</th>
+											</tr>
+											<tr>
+												<td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>987-65-41230</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>987-65-41230</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>987-65-41230</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>987-65-41230</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 건수, 버튼 합계 -->
+
+
+							<!-- 테이블 공통 건수  가로 스크롤타입 -->
+		                	<div class="md_tbl">
+								
+								<!-- 테이블 타이틀 스타일 -->
+			                	<div class="md_title">
+			                		<h4 class="title">합계 내역</h4>
+			                	</div>
+			                	<!-- 테이블 타이틀 스타일 -->
+								
+								<div class="horizontal-scroll-table">
+				                	<div class="tbl_wrap">
+										<table class="tbl">
+											<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+											<colgroup>
+												<!-- 추가 해주시면됩니다. 사이즈는 정해야대요 -->
+												<col style="width:auto;">
+												<col style="width:200px">
+												<col style="width:200px">
+												<col style="width:200px">
+												<col style="width:150px">
+												<col style="width:150px">
+												<col style="width:150px">
+												<col style="width:150px">
+												<col style="width:150px">
+												<col style="width:400px">
+											</colgroup>
+											<thead>
+												<tr>
+													<!-- rowspan="n+1"추가 해주시면됩니다. -->
+												    <th rowspan="5" scope="col" class="thtotal">합계</th>
+												    <th scope="col">업체명<br />szdasdas</th>
+												    <th scope="col">사업자번호<br />szdasdas</th>
+												    <th scope="col">업체명<br />szdasdas</th>
+												    <th scope="col">사업자번호</th>
+												    <th scope="col">업체명</th>
+												    <th scope="col">사업자번호</th>
+												    <th scope="col">업체명</th>
+												    <th scope="col">사업자번호</th>
+												    <th scope="col" class="last">제외사유</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td>(주)아마준</td>
+													<td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>(주)아마준</td>
+												    <td>987-65-41230</td>
+												    <td>
+												    	<div class="tbl_save">
+													    	<input type="text" class="iText" placeholder="입력상태 가능">
+													    	<span class="btn_pack btn_small btn_type2">
+										                		<button type="submit">저장</button>
+										                	</span>
+									                	</div>
+												    </td>
+												</tr>
+												<tr>
+													<th>&nbsp;</th>
+													<td colspan="9" class="no_data">검색 결과가 존재하지 않습니다.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- 테이블 공통 건수  가로 스크롤타입 -->
+
+							<br>
+							<!-- 테이블 공통 건수, 데이터내용 합계  -->
+		                	<div class="md_tbl tbl_total">
+								
+								<!-- 테이블 타이틀 스타일 -->
+			                	<div class="md_title">
+			                		<h4 class="title">데이터 통합 내역</h4>
+			                	</div>
+			                	<!-- 테이블 타이틀 스타일 -->
+
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:210px">
+											<col style="width:145px">
+											<col style="width:115px">
+											<col style="width:auto">
+										</colgroup>
+										<thead>
+											<tr>
+											    <th scope="col" class="rowsp">업체ID</th>
+											    <th scope="col">업체명</th>
+											    <th scope="col">사업자번호</th>
+											    <th scope="col">사업자번호</th>
+											    <th scope="col" class="last">제외사유</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="6">통합</td>
+												<td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td rowspan="6">
+											    	<a href="javascript:void(0);" class="link">987-65-41230</a>
+											    </td>
+											    <td>987-65-41230</td>
+											</tr>
+											<tr>
+												<td class="br_l">
+													<a href="javascript:void(0);" class="link">(주)아마준</a>
+												</td>
+											    <td>(주)아마준</td>
+											    <td>987-65-41230</td>
+											</tr>
+											<tr>
+												<td rowspan="4" class="br_l">(주)아마준</td>
+											    <td><a href="javascript:void(0);" class="link">(주)아마준</a></td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td class="br_l">(주)아마준</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td class="br_l">(주)아마준</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td class="br_l">(주)아마준</td>
+											    <td>
+											    	<div class="tbl_save">
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
+												    	<span class="btn_pack btn_small btn_type2">
+									                		<button type="submit">저장</button>
+									                	</span>
+								                	</div>
+											    </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 건수, 버튼 합계 -->
+
+							<!-- 테이블 공통 건수, 데이터내용 합계  -->
+		                	<div class="md_tbl">
+								
+								<!-- 테이블 타이틀 스타일 -->
+			                	<div class="md_title">
+			                		<h4 class="title">데이터 통합 내역</h4>
+			                	</div>
+			                	<!-- 테이블 타이틀 스타일 -->
+
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:115px">
+											<col style="width:115px">
+											<col style="width:115px">
+											<col style="width:115px">
+											<col style="width:auto">
+											<col style="width:auto">
+											<col style="width:auto">
+										</colgroup>
+										<thead>
+											<tr>
+											    <th scope="col">업체 ID</th>
+											    <th scope="col">업체 ID</th>
+											    <th scope="col">업체 ID</th>
+											    <th scope="col">업체 ID</th>
+											    <th scope="col">업체 ID</th>
+											    <th scope="col">업체 ID</th>
+											    <th scope="col" class="last">업체 ID</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="5">2018-06-13</td>
+												<td rowspan="5">
+													<a href="javascript:void(0);" class="link">(주)아마준</a>
+												</td>
+											    <td rowspan="5">
+											    	<a href="javascript:void(0);" class="link">(주)아마준</a>
+											    </td>
+											    <td rowspan="5">(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											</tr>
+											<tr>
+											    <td class="br_l">(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											</tr>
+											<tr>
+											    <td class="br_l">(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											</tr>
+											<tr>
+											    <td class="br_l">(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											</tr>
+											<tr>
+											    <td class="br_l">(주)아마준</td>
+											    <td>(주)아마준</td>
+											    <td>(주)아마준</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 건수, 버튼 합계 -->
+
+							<br>
 							<!-- 테이블 공통 건수, 버튼 스타일 1  -->
 		                	<div class="md_tbl">
 
@@ -887,9 +1416,7 @@
 											    <td>987-65-41230</td>
 											    <td>
 											    	<div class="tbl_save">
-												    	<span class="iw iText_w9">
-												    		<input type="text" class="iText" placeholder="입력상태 가능">
-												    	</span>
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
 												    	<span class="btn_pack btn_small btn_type2">
 									                		<button type="submit">저장</button>
 									                	</span>
@@ -902,7 +1429,7 @@
 							</div>
 							<!-- 테이블 공통 건수, 버튼 스타일 1  -->
 
-							<br><br>
+							<br>
 							<!-- 테이블 공통 건수,버튼 스타일 2 -->
 		                	<div class="md_tbl">
 								
@@ -960,9 +1487,7 @@
 											    <td>987-65-41230</td>
 											    <td>
 											    	<div class="tbl_save">
-												    	<span class="iw iText_w9">
-												    		<input type="text" class="iText" placeholder="입력상태 가능">
-												    	</span>
+												    	<input type="text" class="iText" placeholder="입력상태 가능">
 												    	<span class="btn_pack btn_small btn_type2">
 									                		<button type="submit">저장</button>
 									                	</span>
@@ -979,8 +1504,92 @@
 								</div>
 							</div>
 							<!-- 테이블 공통 건수,버튼 스타일 2 -->
+
+							<!-- 테이블 공통 건수,버튼 스타일 3 -->
+		                	<div class="md_tbl">
 								
-							<br><br>
+		                		<!-- 검색 건수 스타일 -->
+		                		<div class="md_title">
+		                			<p class="desc">전체<em>380</em>건</p>
+		                		</div>
+		                		<!-- 검색 건수 스타일 -->
+
+			                	<!-- 오른쪽 버튼 스타일 -->
+			                	<div class="desc_tr btn">
+				                	<div class="sel_wrap sel_w1">
+										<label for="list_num">200건</label>
+										<select class="iselect" title="셀렉트 박스 선택">
+											<option>10건</option>
+											<option>50건</option>
+											<option>100건</option>
+											<option>200건</option>
+											<option>500건</option>
+										</select>
+									</div>
+			                	</div>
+			                	<!-- 오른쪽 버튼 스타일 -->
+
+			                	<div class="tbl_wrap">
+									<table class="tbl">
+										<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+										<colgroup>
+											<col style="width:45px">
+											<col style="width:100px">
+											<col style="width:90px">
+											<col style="width:90px">
+											<col style="width:90px">
+											<col style="width:100px">
+											<col style="width:120px">
+											<col style="width:120px">
+											<col style="width:140px">
+											<col style="width:auto">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">
+													<div class="tbl_chk">
+														<span class="chk_box">
+															<input type="checkbox" class="blind" name="group_a" id="chk_all">
+															<label for="chk_all" class="icheckbox"><span class="ichk"></span>&nbsp;</label>
+														</span>
+													</div>
+												</th>
+											    <th scope="col">업체ID</th>
+											    <th scope="col">업체명</th>
+											    <th scope="col">딜ID</th>
+											    <th scope="col">딜명</th>
+											    <th scope="col">정산주기</th>
+											    <th scope="col">판매시작일</th>
+											    <th scope="col">판매종료일</th>
+											    <th scope="col">최초배송완료일</th>
+											    <th scope="col" class="last">별도청구</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+												<td>6</td>
+												<td>7</td>
+												<td>8</td>
+												<td>9</td>
+												<td>10</td>
+											</tr>
+											<tr>
+												<td colspan="10" class="no_data">
+													<p>검색 결과가 존재하지 않습니다.</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 테이블 공통 건수,버튼 스타일 3 -->
+								
+							<br>
 							<!-- 테이블 공통 vertical 스타일 1 -->
 		                	<div class="md_tbl tbl_list">
 			                	<div class="tbl_wrap">
@@ -1005,7 +1614,7 @@
 							</div>
 							<!-- 테이블 공통 vertical 스타일 1 -->
 
-							<br><br>
+							<br>
 							<!-- 테이블 공통 vertical 스타일  2 -->
 		                	<div class="md_tbl tbl_list">
 			                	<div class="tbl_wrap">
@@ -1036,8 +1645,7 @@
 							</div>
 							<!-- 테이블 공통 vertical 스타일 2 -->
 
-
-							<br><br>
+							<br>
 							<div id="realgrid"></div>
 
 		                </div>
@@ -1244,1087 +1852,11 @@
 		<!--  레이어팝업 공통 스타일 -->
 
 	</div>
-	<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="resources/grid/realgridjs-lic.js"></script>
-	<script type="text/javascript" src="resources/grid/realgridjs_eval.1.1.29.min.js"></script>
-	<script type="text/javascript" src="resources/grid/realgridjs-api.1.1.29.js"></script>
-	<script type="text/javascript" src="resources/grid/jszip.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="resources/js/ui-common.js"></script>
-	<script type="text/javascript">
-		var gridView;
-		var dataProvider;
-		$(document).ready( function(){
-		    RealGridJS.setRootContext("resources/grid");
-		    dataProvider = new RealGridJS.LocalDataProvider();
-		    gridView = new RealGridJS.GridView("realgrid");
-		    gridView.setDataSource(dataProvider);
-		    var hoverMaskValue = $('#selHoverMask').val();
-		    var imageButtons1 = [{
-			  "name": "지급일변경",
-			  "up": "resources/images/table/change1.png",
-			  "hover": "resources/images/table/change1.png",
-			  "down": "resources/images/table/change1.png",
-			  "width":75
-			}];
-			var imageButtons2 = [{
-			  "name": "변경",
-			  "up": "resources/images/table/change2.png",
-			  "hover": "resources/images/table/change2.png",
-			  "down": "resources/images/table/change3.png",
-			  "width":40
-			}];
-			var imageButtons3 = [{
-			  "name": "정산완료",
-			  "up": "resources/images/table/complete.png",
-			  "hover": "resources/images/table/complete.png",
-			  "down": "resources/images/table/complete.png",
-			  "width":66
-			}];
-			var imageButtons4 = [{
-			  "name": "보류해제",
-			  "up": "resources/images/table/hold_clear.png",
-			  "hover": "resources/images/table/hold_clear.png",
-			  "down": "resources/images/table/hold_clear.png",
-			  "width":64
-			}];
-		    gridView.setDisplayOptions({
-			  fitStyle: "evenFill",
-			  rowHoverMask:{
-			    visible:true,
-			    styles:{
-			      background:"#08000000"
-			    },
-			    hoverMask: hoverMaskValue
-			  },
-			  rowFocusVisible:true, 
-  			  rowFocusBackground:"#090000ff",
-  			  heightMeasurer: "fixed",
-			  rowResizable: true,
-			  rowHeight:45,
-			});
-			gridView.setFooter({
-			  visible: false 
-			});
-			gridView.setPanel({
-			  visible: false ,
-			  showAll: false  
-			});
-			gridView.setCheckBar({
-			  visible: false ,
-			  showAll: false  
-			});
-			gridView.setStateBar({
-			  visible: false  
-			});
-			gridView.setIndicator({
-			  visible: true  
-			});
-			gridView.setHeader(
-			  {headerHeightFill : "default"}
-			);
-		   	gridView.setStyles({
-			    "grid": {
-			        "background": "#fff",
-			        "iconLocation": "left",
-			        "border": "#888,0",
-			        "borderBottom": "#ffc9ced3,0",
-			        "iconAlignment": "center",
-			        "iconPadding": "0",
-			        "selectedBackground": "#ff696969",
-			        "contentFit": "auto",
-			        "inactiveBackground": "#ffd3d3d3",
-			        "iconOffset": "0",
-			        "selectionDisplay": "mask",
-			        "hoveredMaskBackground": "#1f5292f7",
-			        "hoveredMaskBorder": "#335292f7,1",
-			        "fontBold": "false",
-			        "paddingRight": "5",
-			        "paddingBottom": "10",
-			        "paddingTop": "10",
-			        "figureBackground": "#ff4a88d2",
-			        "selectedForeground": "#fff",
-			        "foreground": "#ff000000",
-			        "inactiveForeground": "#ff808080",
-			        "line": "#ffa1adbb,1",
-			        "textAlignment": "center",
-			        "lineAlignment": "center",
-			        "iconIndex": "0"
-			    },
-			    "panel": {
-			        "background": "#f9f9f9",
-			        "paddingRight": "10",
-			        "iconLocation": "left",
-			        "border": "#888,1",
-			        "borderTop": "#888,2",
-			        "selectedForeground": "#fff",
-			        "iconAlignment": "center",
-			        "foreground": "#ff787878",
-			        "inactiveForeground": "#ff808080",
-			        "borderBottom": "#888888,2",
-			        "textAlignment": "near",
-			        "selectedBackground": "#ff696969",
-			        "lineAlignment": "center",
-			        "inactiveBackground": "#ffd3d3d3",
-			        "iconOffset": "0",
-			        "selectionDisplay": "mask",
-			        "hoveredMaskBorder": "#335292f7,1",
-			        "iconPadding": "0",
-			        "hoveredMaskBackground": "#1f5292f7",
-			        "contentFit": "auto",
-			        "paddingTop": "7",
-			        "borderRight": "#ff777777,1",
-			        "figureBackground": "#ff008800",
-			        "paddingBottom": "7",
-			        "iconIndex": "0"
-			    },
-			    "body": {
-			        "background": "#fff",
-			        "iconLocation": "left",
-			        "border": "#ff313539,1",
-			        "iconAlignment": "center",
-			        "borderBottom": "#ffdedede,1",
-			        "iconPadding": "0",
-			        "selectedBackground": "#ff696969",
-			        "contentFit": "auto",
-			        "inactiveBackground": "#ffd3d3d3",
-			        "iconOffset": "0",
-			        "selectionDisplay": "mask",
-			        "hoveredMaskBackground": "#1f5292f7",
-			        "hoveredMaskBorder": "#335292f7,1",
-			        "paddingRight": "7",
-			        "paddingBottom": "5",
-			        "paddingTop": "5",
-			        "figureBackground": "#ff008800",
-			        "selectedForeground": "#444",
-			        "foreground": "#444",
-			        "inactiveForeground": "#777",
-			        "line": "#ececec,1",
-			        "textAlignment": "center",
-			        "lineAlignment": "center",
-			        "borderRight": "#ffdedede,1",
-			        "iconIndex": "0",
-			        "empty": {}
-			    },
-			    "fixed": {
-			        "background": "#ffd3d3d3",
-			        "paddingRight": "2",
-			        "iconLocation": "left",
-			        "border": "#88888888,1",
-			        "selectedForeground": "#fff",
-			        "iconAlignment": "center",
-			        "foreground": "#ff000000",
-			        "inactiveForeground": "#ff808080",
-			        "borderBottom": "#ff999999,1",
-			        "textAlignment": "center",
-			        "selectedBackground": "#ff696969",
-			        "lineAlignment": "center",
-			        "inactiveBackground": "#ffd3d3d3",
-			        "iconOffset": "0",
-			        "selectionDisplay": "mask",
-			        "hoveredMaskBorder": "#335292f7,1",
-			        "iconPadding": "0",
-			        "hoveredMaskBackground": "#1f5292f7",
-			        "contentFit": "auto",
-			        "paddingTop": "2",
-			        "borderRight": "#ff999999,1",
-			        "figureBackground": "#ff008800",
-			        "paddingBottom": "2",
-			        "iconIndex": "0",
-			        "colBar": {
-			            "background": "#fff",
-			            "paddingRight": "2",
-			            "iconLocation": "left",
-			            "border": "#ff313539,1",
-			            "selectedForeground": "#fff",
-			            "iconAlignment": "center",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "borderBottom": "#ff808080,1",
-			            "textAlignment": "center",
-			            "selectedBackground": "#ff696969",
-			            "lineAlignment": "center",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "contentFit": "auto",
-			            "paddingTop": "2",
-			            "borderRight": "#ff808080,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "iconIndex": "0",
-			            "borderLeft": "#ff808080,1"
-			        },
-			        "rowBar": {
-			            "background": "#ffd3d3d3",
-			            "paddingRight": "2",
-			            "iconLocation": "left",
-			            "border": "#88888888,1",
-			            "selectedForeground": "#fff",
-			            "iconAlignment": "center",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "borderBottom": "#ff999999,1",
-			            "textAlignment": "center",
-			            "selectedBackground": "#ff696969",
-			            "lineAlignment": "center",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "contentFit": "auto",
-			            "paddingTop": "2",
-			            "borderRight": "#ff999999,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "iconIndex": "0"
-			        }
-			    },
-			    "header": {
-			        "background": "linear,#f4f4f4,#f4f4f4,90",
-			        "iconLocation": "left",
-			        "border": "#ff313539,1",
-			        "iconAlignment": "center",
-			        "borderTop": "#888,0",
-			        "borderBottom": "#ffdedede,1",
-			        "selectedBackground": "linear,#7858a1,#7858a1,180",
-			        "contentFit": "auto",
-			        "inactiveBackground": "#7858a1",
-			        "iconOffset": "0",
-			        "selectionDisplay": "inversion",
-			        "iconPadding": "0",
-			        "hoveredMaskBackground": "linear,#7858a1,#7858a1,180",
-			        "hoveredMaskBorder": "#9f7bce,0",
-			        "fontSize":"12",
-			        "fontBold": "true",
-			        "fontFamily": "돋움,Dotum,sans-serif",
-			        "figureBackground": "#ff000000",
-			        "paddingBottom": "7",
-			        "paddingTop": "12",
-			        "paddingRight": "7",
-			        "selectedForeground": "#fff",
-			        "foreground": "#444",
-			        "inactiveForeground": "#7858a1",
-			        "textAlignment": "center",
-			        "borderLeft": "#ececec,0",
-			        "lineAlignment": "center",
-			        "borderRight": "#ffdedede,1",
-			        "iconIndex": "0",
-			        "group": {
-			            "background": "linear,#f4f4f4,#f4f4f4,90",
-			            "iconLocation": "left",
-			            "border": "#ff313539,1",
-			            "iconAlignment": "center",
-			            "borderBottom": "#ffdedede,1",
-			            "borderTop": "#ff313539,1",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "linear,#7858a1,#7858a1,90",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "fontSize":"12",
-				        "fontBold": "true",
-				        "fontFamily": "돋움,Dotum,sans-serif",
-			            "figureBackground": "#ff000000",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#fff",
-			            "foreground": "#444",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "center",
-			            "borderLeft": "#ffdedede,0",
-			            "lineAlignment": "center",
-			            "borderRight": "#ffdedede,1",
-			            "iconIndex": "0"
-			        }
-			    },
-			    "footer": {
-			        "background": "#ffdee2e7",
-			        "iconLocation": "left",
-			        "border": "#88888888,1",
-			        "iconAlignment": "center",
-			        "iconOffset": "0",
-			        "borderTop": "#ff79828b,1",
-			        "selectedBackground": "#ff696969",
-			        "contentFit": "auto",
-			        "inactiveBackground": "#ffd3d3d3",
-			        "selectionDisplay": "mask",
-			        "iconPadding": "0",
-			        "hoveredMaskBackground": "#1f5292f7",
-			        "hoveredMaskBorder": "#335292f7,1",
-			        "paddingRight": "2",
-			        "paddingBottom": "0",
-			        "paddingTop": "0",
-			        "figureBackground": "#ff008800",
-			        "selectedForeground": "#fff",
-			        "foreground": "#ff000000",
-			        "inactiveForeground": "#ff808080",
-			        "textAlignment": "near",
-			        "borderLeft": "#fff,1",
-			        "lineAlignment": "center",
-			        "borderRight": "#ff9099a3,1",
-			        "iconIndex": "0"
-			    },
-			    "rowGroup": {
-			        "header": {
-			            "background": "#f9f9f9",
-			            "iconLocation": "left",
-			            "border": "#ff313539,0",
-			            "iconAlignment": "center",
-			            "borderBottom": "#dbdbdb,1",
-			            "borderTop": "#fff,1",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff002f6e",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "near",
-			            "borderLeft": "#fff,1",
-			            "lineAlignment": "center",
-			            "borderRight": "#ff85a8d0,1",
-			            "iconIndex": "0"
-			        },
-			        "footer": {
-			            "background": "#ff9cbade",
-			            "iconLocation": "left",
-			            "border": "#fff,0",
-			            "iconAlignment": "center",
-			            "borderBottom": "#fff,0",
-			            "borderTop": "#ffd8e3f0,1",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "4",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "far",
-			            "borderLeft": "#fff,0",
-			            "lineAlignment": "center",
-			            "borderRight": "#ffd8e3f0,1",
-			            "iconIndex": "0"
-			        },
-			        "head": {
-			            "background": "linear,#ffe9f0f8,#ffc3d8f1,90",
-			            "iconLocation": "left",
-			            "border": "#ff313539,1",
-			            "iconAlignment": "center",
-			            "borderBottom": "#ff5d8cc9,1",
-			            "borderTop": "#fff,1",
-			            "selectedBackground": "#ffff0000",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "inversion",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "linear,#fffff8a9,#ffffd75e,90",
-			            "hoveredMaskBorder": "#ffff0000,1",
-			            "figureBackground": "#ff000000",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#ffff0000",
-			            "foreground": "#ff002f6e",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "center",
-			            "borderLeft": "#fff,1",
-			            "lineAlignment": "center",
-			            "borderRight": "#ff5d8cc9,1",
-			            "iconIndex": "0"
-			        },
-			        "foot": {
-			            "background": "#ffdee2e7",
-			            "paddingRight": "2",
-			            "iconLocation": "left",
-			            "border": "#88888888,1",
-			            "selectedForeground": "#fff",
-			            "iconAlignment": "center",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "iconOffset": "0",
-			            "textAlignment": "near",
-			            "selectedBackground": "#ff696969",
-			            "lineAlignment": "center",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "selectionDisplay": "mask",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "borderTop": "#ff79828b,1",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "contentFit": "auto",
-			            "paddingTop": "2",
-			            "borderRight": "#ff9099a3,1",
-			            "figureBackground": "#ff008800",
-			            "iconPadding": "0",
-			            "paddingBottom": "1",
-			            "iconIndex": "0"
-			        },
-			        "headerBar": {
-			            "background": "#ffd7e6f7",
-			            "iconLocation": "left",
-			            "border": "#fff,0",
-			            "iconAlignment": "center",
-			            "borderBottom": "#fff,0",
-			            "borderTop": "#fff,1",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff498ee1",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff002f6e",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "near",
-			            "borderLeft": "#fff,1",
-			            "lineAlignment": "center",
-			            "borderRight": "#fff,0",
-			            "iconIndex": "0"
-			        },
-			        "footerBar": {
-			            "background": "#ff9cbade",
-			            "iconLocation": "left",
-			            "border": "#fff,0",
-			            "iconAlignment": "center",
-			            "borderBottom": "#fff,0",
-			            "borderTop": "#ffd7e6f7,1",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "near",
-			            "borderLeft": "#fff,0",
-			            "lineAlignment": "center",
-			            "borderRight": "#ffd7e6f7,1",
-			            "iconIndex": "0"
-			        },
-			        "bar": {
-			            "background": "#ffd7e6f7",
-			            "iconLocation": "left",
-			            "border": "#ff313539,0",
-			            "iconAlignment": "center",
-			            "borderBottom": "#ff85a8d0,0",
-			            "borderTop": "#fff,0",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff002f6e",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "near",
-			            "borderLeft": "#fff,1",
-			            "lineAlignment": "center",
-			            "borderRight": "#ff85a8d0,1",
-			            "iconIndex": "0"
-			        },
-			        "panel": {
-			            "background": "#ffd7e6f7",
-			            "iconLocation": "left",
-			            "border": "#ff5d8cc9,1",
-			            "iconAlignment": "center",
-			            "borderBottom": "#ff5d8cc9,1",
-			            "borderTop": "#fff,1",
-			            "selectedBackground": "#ffff0000",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#fffff5a2",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff000000",
-			            "paddingBottom": "1",
-			            "paddingTop": "1",
-			            "paddingRight": "1",
-			            "selectedForeground": "#ffff0000",
-			            "foreground": "#ff002f6e",
-			            "inactiveForeground": "#ff808080",
-			            "line": "#ff5d8cc9,1",
-			            "textAlignment": "center",
-			            "borderLeft": "#fff,1",
-			            "lineAlignment": "center",
-			            "borderRight": "#ff5d8cc9,1",
-			            "iconIndex": "0"
-			        }
-			    },
-			    "indicator": {
-			        "background": "#f4f4f4",
-			        "iconLocation": "left",
-			        "border": "#ececec,1",
-			        "iconAlignment": "center",
-			        "borderBottom": "#dbdbdb,1",
-			        "borderTop": "#dbdbdb,0",
-			        "selectedBackground": "#fff",
-			        "selectedborderLeft": "#9f7bce, 2",
-			        "contentFit": "auto",
-			        "inactiveBackground": "#ffd3d3d3",
-			        "iconOffset": "0",
-			        "selectionDisplay": "mask",
-			        "iconPadding": "0",
-			        "hoveredMaskBackground": "#fff",
-			        "hoveredMaskBorder": "#9f7bce,1",
-			        "figureBackground": "#9f7bce",
-			        "paddingBottom": "7",
-			        "paddingTop": "7",
-			        "paddingRight": "5",
-			        "selectedForeground": "#fff",
-			        "foreground": "#444",
-			        "inactiveForeground": "#fff",
-			        "textAlignment": "center",
-			        "borderLeft": "#f9f9f9,0",
-			        "lineAlignment": "center",
-			        "borderRight": "#ececec,1",
-			        "iconIndex": "0",
-			        "head": {
-			            "background": "linear,#f4f4f4,#f4f4f4,90",
-			            "iconLocation": "left",
-			            "border": "#ececec,0",
-			            "iconAlignment": "center",
-			            "borderBottom": "#dbdbdb,1",
-			            "borderTop": "#888,0",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "10",
-			            "paddingTop": "10",
-			            "paddingRight": "7",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "center",
-			            "borderLeft": "#ffdedede,0",
-			            "lineAlignment": "center",
-			            "borderRight": "#ffdedede,1",
-			            "iconIndex": "0"
-			        },
-			        "foot": {
-			            "background": "#ffdee2e7",
-			            "iconLocation": "left",
-			            "border": "#88888888,1",
-			            "iconAlignment": "center",
-			            "borderBottom": "#ffc6c6c6,1",
-			            "borderTop": "#ff79828b,1",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff002f6e",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "center",
-			            "borderLeft": "#fff,1",
-			            "lineAlignment": "center",
-			            "borderRight": "#ff9099a3,1",
-			            "iconIndex": "0"
-			        }
-			    },
-			    "checkBar": {
-			        "background": "#fff",
-			        "paddingRight": "10",
-			        "iconLocation": "left",
-			        "border": "#ffdedede,1",
-			        "selectedForeground": "#fff",
-			        "iconAlignment": "center",
-			        "foreground": "#9f7bce",
-			        "figureBorder": "#9f7bce, 1",
-			        "inactiveForeground": "#9f7bce",
-			        "borderBottom": "#dbdbdb,1",
-			        "textAlignment": "center",
-			        "line":"#ff9f7bce,1",
-				    "figureBorder":"#ff9f7bce,1",
-				    "figureBackground": "#ff9f7bce",
-			        "selectedBackground": "#ffffffff",
-			        "lineAlignment": "center",
-			        "inactiveBackground": "#9f7bce",
-			        "iconOffset": "0",
-			        "selectionDisplay": "mask",
-			        "hoveredMaskBorder": "#ff9f7bce,1",
-			        "iconPadding": "0",
-			        "hoveredMaskBackground": "#ff9f7bce",
-			        "contentFit": "auto",
-			        "paddingTop": "7",
-			        "borderRight": "#ececec,1",
-			        "paddingBottom": "7",
-			        "iconIndex": "0",
-			        "head": {
-			            "background": "linear,#f4f4f4,#f4f4f4,90",
-			            "iconLocation": "left",
-			            "border": "#ff000000,0",
-			            "iconAlignment": "center",
-			            "borderBottom": "#dbdbdb,1",
-			            "borderTop": "#888,0",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008e00",
-			            "paddingBottom": "5",
-			            "paddingTop": "5",
-			            "paddingRight": "10",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "center",
-			            "borderLeft": "#ffdedede,0",
-			            "lineAlignment": "center",
-			            "borderRight": "#ffdedede,1",
-			            "iconIndex": "0"
-			        },
-			        "foot": {
-			            "background": "#ffdee2e7",
-			            "iconLocation": "left",
-			            "border": "#88888888,1",
-			            "iconAlignment": "center",
-			            "borderBottom": "#ffc6c6c6,1",
-			            "borderTop": "#ff79828b,1",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "center",
-			            "borderLeft": "#fff,1",
-			            "lineAlignment": "center",
-			            "borderRight": "#ff9099a3,1",
-			            "iconIndex": "0"
-			        }
-			    },
-			    "statusBar": {
-			        "background": "#fff",
-			        "paddingRight": "10",
-			        "iconLocation": "left",
-			        "border": "#ff313539,1",
-			        "selectedForeground": "#fff",
-			        "iconAlignment": "center",
-			        "foreground": "#444",
-			        "inactiveForeground": "#ff808080",
-			        "borderBottom": "#dbdbdb,1",
-			        "textAlignment": "center",
-			        "selectedBackground": "#ff696969",
-			        "lineAlignment": "center",
-			        "inactiveBackground": "#ffd3d3d3",
-			        "iconOffset": "0",
-			        "selectionDisplay": "mask",
-			        "hoveredMaskBorder": "#335292f7,1",
-			        "iconPadding": "0",
-			        "hoveredMaskBackground": "#1f5292f7",
-			        "contentFit": "auto",
-			        "paddingTop": "7",
-			        "borderRight": "#ececec,1",
-			        "figureBackground": "#ff008800",
-			        "paddingBottom": "7",
-			        "iconIndex": "0",
-			        "head": {
-			            "background": "linear,#f4f4f4,#f4f4f4,90",
-			            "iconLocation": "left",
-			            "border": "#ececec,0",
-			            "iconAlignment": "center",
-			            "borderBottom": "#dbdbdb,1",
-			            "borderTop": "#888,2",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "figureSize": "1",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "center",
-			            "borderLeft": "#f9f9f9,0",
-			            "lineAlignment": "center",
-			            "borderRight": "#ececec,1",
-			            "iconIndex": "0"
-			        },
-			        "foot": {
-			            "background": "#ffdee2e7",
-			            "iconLocation": "left",
-			            "border": "#88888888,1",
-			            "iconAlignment": "center",
-			            "borderBottom": "#ffc6c6c6,1",
-			            "borderTop": "#ff79828b,1",
-			            "selectedBackground": "#ff696969",
-			            "contentFit": "auto",
-			            "inactiveBackground": "#ffd3d3d3",
-			            "iconOffset": "0",
-			            "selectionDisplay": "mask",
-			            "iconPadding": "0",
-			            "hoveredMaskBackground": "#1f5292f7",
-			            "hoveredMaskBorder": "#335292f7,1",
-			            "figureBackground": "#ff008800",
-			            "paddingBottom": "2",
-			            "paddingTop": "2",
-			            "paddingRight": "2",
-			            "selectedForeground": "#fff",
-			            "foreground": "#ff000000",
-			            "inactiveForeground": "#ff808080",
-			            "textAlignment": "center",
-			            "borderLeft": "#fff,1",
-			            "lineAlignment": "center",
-			            "borderRight": "#ff9099a3,1",
-			            "iconIndex": "0"
-			        }
-			    },
-			    "selection": {
-			        "background": "#05000000",
-			        "paddingRight": "0",
-			        "iconLocation": "left",
-			        "border": "#1dbdbdb,1",
-			        "borderLeft": "#1dbdbdb,1",
-			        "selectedForeground": "#777",
-			        "iconAlignment": "center",
-			        "foreground": "#444",
-			        "inactiveForeground": "#444",
-			        "iconOffset": "0",
-			        "textAlignment": "center",
-			        "selectedBackground": "#f4f4f4",
-			        "lineAlignment": "center",
-			        "inactiveBackground": "#f4f4f4",
-			        "selectionDisplay": "mask",
-			        "hoveredMaskBorder": "#dbdbdb,1",
-			        "iconPadding": "0",
-			        "hoveredMaskBackground": "#1f5292f7",
-			        "contentFit": "auto",
-			        "paddingTop": "0",
-			        "figureBackground": "#444",
-			        "paddingBottom": "0",
-			        "iconIndex": "0"
-			    }
-		    });
-			var fields = [
-			    {
-			        "fieldName": "ImageButton"
-			    },
-			    {
-			        "fieldName": "OrderID",
-			        "dataType": "text"
-			    },
-			    {
-			        "fieldName": "CustomerID"
-			    },
-			    {
-			        "fieldName": "CustomerID2"
-			    },
-			    {
-			        "fieldName": "EmployeeID"
-			    },
-			    {
-			        "fieldName": "OrderDate",
-			        "dataType": "datetime",
-			        "datetimeFormat": "yyyy/MM/dd"
-			    },
-			    {
-			        "fieldName": "CompanyName"
-			    },
-			    {
-			        "fieldName": "Country"
-			    },
-			    {
-			        "fieldName": "Phone"
-			    }
-			];
-			dataProvider.setFields(fields);
-
-			var columns = [
-				  {
-			        "name": "ImageButton",
-			        "fieldName": "ImageButton",
-			        "width": "100",
-			        "button": "image",
-			        "dynamicStyles": [
-			            {
-			                "criteria": [
-			                    "value = '지급일변경'",
-			                    "value = '변경'"
-			                ],
-			                "styles": [
-			                    "renderer=buttons1",
-			                    "renderer=buttons2"
-			                ]
-			            }
-			        ],
-			        "styles": {
-			            "textAlignment": "center"
-			        },
-			        "header": {
-			            "text": "동적 버튼"
-			        }
-			    },
-			    {
-			        "name": "EmployeeID",
-			        "fieldName": "EmployeeID",
-			        "width": "150",
-			        "button": "image",
-			        "imageButtons": {
-			            "width": 75,
-			            "images": [
-			                {
-			                    "name": "지급일변경",
-			                    "up": "resources/images/table/change1.png",
-			                    "hover": "resources/images/table/change1.png",
-			                    "down": "resources/images/table/change1.png"
-			                },
-			                {
-			                    "name": "변경",
-			                    "up": "resources/images/table/change2.png",
-			                    "hover": "resources/images/table/change2.png",
-			                    "down": "resources/images/table/change2.png"
-			                }
-			            ]
-			        },
-			        "styles": {
-			            "textAlignment": "center"
-			        },
-			        "header": {
-			            "text": "Employee ID"
-			        }
-			    },
-			    {
-			        "type": "group",
-			        "name": "GroupOrder",
-			        "orientation": "vertical",
-			        "width": 250,
-			        "header": {
-			            "visible": false
-			        },
-			        "columns": [
-			            {
-			                "type": "group",
-			                "name": "GroupIds",
-			                "header": {
-			                    "fixedHeight": 20,
-			                    "visible": false
-			                },
-			                "columns": [
-			                    {
-			                        "name": "OrderID",
-			                        "fieldName": "OrderID",
-			                        "type": "data",
-			                        "width": "90",
-			                        "styles": {
-			                            "textAlignment": "center"
-			                        },
-			                        "header": {
-			                            "text": "Order",
-			                        }
-			                    },
-			                    {
-			                        "name": "CustomerID",
-			                        "fieldName": "CustomerID",
-			                        "type": "data",
-			                        "width": "130",
-			                        "styles": {
-			                            "textAlignment": "center"
-			                        },
-			                        "header": {
-			                            "text": "Customer ID"
-			                        }
-			                    },
-			                    {
-			                        "name": "EmployeeID",
-			                        "fieldName": "EmployeeID",
-			                        "type": "data",
-			                        "width": "100",
-			                        "styles": {
-			                            "textAlignment": "center"
-			                        },
-			                        "header": {
-			                            "text": "Employee ID"
-			                        }
-			                    }
-			                ]
-			            },
-			            {
-			                "name": "OrderDate",
-			                "fieldName": "OrderDate",
-			                "type": "data",
-			                "width": "130",
-			                "styles": {
-			                    "textAlignment": "center"
-			                    
-			                }
-			            }
-			        ]
-			    },
-			    {
-			        "name": "CustomerID",
-			        "fieldName": "CustomerID",
-			        "width": "110",
-			        "styles": {
-			            "textAlignment": "center"
-			        },
-			        "button": "popup",
-			        "popupMenu": "customerPopup",
-			        "header": {
-			            "text": "Customer ID"
-			        }
-			    },
-			    {
-			        "name": "Country",
-			        "fieldName": "Country",
-			        "width": "100",
-			        "styles": {
-			            "textAlignment": "center",
-			            "datetimeFormat": "hh:mm:ss"
-			        },
-			        "header": {
-			            "text": "Country"
-			        }
-			    },
-			    {
-			        "name": "OrderDate",
-			        "fieldName": "OrderDate",
-			        "width": "130",
-			        "styles": {
-			            "textAlignment": "center",
-			            "datetimeFormat": "yyyy/MM/dd"
-			        },
-			        "header": {
-			            "text": "Order Date"
-			        }
-			    },
-			    {
-			        "name": "CompanyName",
-			        "fieldName": "CompanyName",
-			        "width": "180",
-			        "styles": {
-			            "textAlignment": "center"
-			        },
-			        "header": {
-			            "text": "Company Name"
-			        }
-			    },
-			    {
-			        "name": "Phone",
-			        "fieldName": "Phone",
-			        "width": "100",
-			        "styles": {
-			            "textAlignment": "center"
-			        },
-			        "header": {
-			            "text": "Phone"
-			        }
-			    }
-
-			];	
-			gridView.setColumns(columns);
-			gridView.setColumnProperty("ImageButton", "alwaysShowButton", "true");
-			gridView.setColumnProperty("EmployeeID", "alwaysShowButton", "true");
-			gridView.setColumnProperty("OrderID", "alwaysShowButton", "true");
-			gridView.setColumnProperty("CustomerID", "alwaysShowButton", "true");
-			gridView.onImageButtonClicked =  function (grid, itemIndex, column, buttonIndex, name) {
-			    alert("onImageButtonClicked: " + itemIndex + ", " + column.name+", " + buttonIndex + ", " + name);
-			};
-			gridView.onCellButtonClicked = function (grid, itemIndex, column) {
-			    alert("CellButton Clicked: itemIndex=" + itemIndex + ", fieldName=" + column.fieldName);
-			};
-			gridView.onMenuItemClicked = function (grid, data) {
-			    alert(data.label);
-			};
-			dataProvider.setRowCount(100, false, ['테스트', '국산', '몰라', '가즈아', '102938109', '2018/09/18', '010-1234-5678', 'test', 'test', 'test']);
-			gridView.onRowCountChanged = function (gridView, newCount) {
-			    var gridDiv = document.getElementById("realgrid");
-			    var rowHeight = grdMain.getDisplayOptions().rowHeight ? grdMain.getDisplayOptions().rowHeight : 23;  // row의 높이
-			    var panelHeight = 0;    // 그리드 panel이 있는 경우 높이
-			    var headerHeight = 23;  // header영역의 높이
-			    var footerHeight = 0;   // footer영역의 높이
-
-			    gridDiv.style.height = (( Math.max(newCount,10)*rowHeight)+panelHeight+headerHeight+footerHeight).toString()+"px";
-			    grdMain.resetSize();  // &lt;= 상위 div의 크기가 변경되면 그리드 크기를 변경
-			};
-		});   
-		
-	</script>
 	<script type="text/javascript">init();</script>
-
 </body>
 
 </html>
