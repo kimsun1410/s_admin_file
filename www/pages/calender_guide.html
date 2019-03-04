@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="http://image.wemakeprice.com/favicon_v01.ico">
+	<meta name="title" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="og:type" property="og:type" content="website">
+	<meta name="og:url" property="og:url" content="http:">
+	<meta name="og:image" property="og:image" content="http:/">
+	<meta name="og:title" property="og:title" content="">
+	<meta name="og:description" property="og:description" content="위메프 - 서비스 정산시스템">
+	<title>위메프 - 서비스 정산시스템 full calender 가이드</title>
+	<link rel="stylesheet" href="resources/css/common/s_common.css">
+	<link rel="stylesheet" href="resources/css/common/s_datapicker.css" />
+	<link rel="stylesheet" href="resources/css/plugin/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" href="resources/css/common/fullcalendar.min.css" />
+	<link rel="stylesheet" href="resources/css/common/fullcalendar.print.min.css" media="print"/>
+	<!--[if lt IE 9]>
+	    <script src="resources/js/placeholder.js"></script>
+	    <script src="resources/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="skipnavigation">
+		<ul>
+			<li><a href="#contents">본문 바로가기</a></li>
+			<li><a href="#sidenav">대 메뉴 바로가기</a></li>
+		</ul>
+	</div>
+	<hr>
+	<div id="wrap">
+		<div id="header">
+			<div class="inner_wrap">
+				<button class="ico all_menu">전체보기</button>
+				<h1 class="logo"><a href="#none" class="tit">서비스 정산시스템</a></h1>
+				<div class="util_top">
+					<ul class="util_wrap">
+						<li>
+							<span>안녕하세요.<b>홍길동</b>님</span>
+						</li>
+						<li><a href="#none">정보수정</a></li>
+						<li><a href="#none">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="sidenav">
+			<div id="nav_inner">
+				<div id="inner_box" class="inner_left">
+					<ul class="list_snb">
+						<li>
+							<h2>PG 대사</h2>
+							<div class="sub_menu">
+								<ul class="depth">
+									<li><a href="">승인 대사</a></li>
+									<li><a href="#none"  class="selected">정산 대사</a></li>
+									<li><a href="#none">상세조회</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>정산관리</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">매출 관리</a></li>
+									<li><a href="#none">정산대상 관리</a></li>
+									<li class="selected"><a href="#none">지급대상 관리</a></li>
+									<li><a href="#none">역정산 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>세금계산서 관리</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">발행대상 관리</a></li>
+									<li><a href="#none">발행제외 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>운영 관리</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">임의조정 관리</a></li>
+									<li><a href="#none">선입 관리</a></li>
+									<li><a href="#none">지출 결의서</a></li>
+									<li><a href="#none">미사용 환불 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>마케팅 관리</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">영업대행 관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<h2>회계 대사</h2>
+							<div class="sub-menu">
+								<ul class="depth">
+									<li><a href="#none">일마감 대사</a></li>
+									<li><a href="#none">전표 대사</a></li>
+									<li><a href="#none">주문 조회</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<br><br>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="contents">
+				<div class="section">
+					<h3 class="title">비영업일 관리</h3>
+					<div class="box_calender">
+						<div id="calendar"></div>
+					</div>
+					<div class="box_view cal_d">
+						<div class="md_tbl tbl_list">
+		                	<h4 class="title">비영업일 상세</h4>
+		                	<div class="tbl_wrap">
+								<table class="tbl">
+									<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+									<colgroup>
+										<col style="width:15%">
+										<col style="width:35%">
+										<col style="width:15%">
+										<col style="width:35%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>일자<span class="ico dotted">*</span></th>
+											<td>
+												<input type="text" disabled="disabled" placeholder="2018-12-13" id="">
+												<span class="gray"><em>*</em> 캘린더에서 선택하세요</span>
+											</td>
+											<th>유형<span class="ico dotted">*</span></th>
+											<td>
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_c" id="chk_1">
+													<label for="chk_1" class="icheckbox"><span class="ichk"></span>휴일</label>
+												</span>
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_c" id="chk_3" disabled="disabled">
+													<label for="chk_3" class="icheckbox focus"><span class="ichk"></span>정산불가</label>
+												</span>
+												<span class="chk_box">
+													<input type="checkbox" class="blind" name="group_c" id="chk_2">
+													<label for="chk_2" class="icheckbox checked"><span class="ichk"></span>정산불가</label>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th>등록사유<span class="ico dotted">*</span></th>
+											<td><input type="text" class="iText" placeholder="최대 50자"></td>
+											<th>사용여부<span class="ico dotted">*</span></th>
+											<td>
+												<span class="chk_box">
+													<input type="radio" class="blind" name="group_d" id="radio_1">
+													<label for="radio_1" class="iradio checked"><span class="ichk"></span>사용</label>
+												</span>
+												<span class="chk_box">
+													<input type="radio" class="blind" name="group_d" id="radio_2">
+													<label for="radio_2" class="iradio"><span class="ichk"></span>미사용</label>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th>등록자</th>
+											<td>홍길동<span class="gray">(Gildong09)</span></td>
+											<th>수정자</th>
+											<td>김길동<span class="gray">(dong98745)</span></td>
+										</tr>
+										<tr>
+											<th>등록일시</th>
+											<td>2020-10-10 <span>17:52:03</span></td>
+											<th>수정일시</th>
+											<td>2020-10-10 <span>17:52:03</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="box_btnarea">
+						<span class="btn_pack btn_smid btn_type4">
+		                	<button type="submit">저장</button>
+		                </span>
+		                <span class="btn_pack btn_smid btn_type">
+		                	<button type="submit">초기화</button>
+		                </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<!--<div id="footer">
+			<div></div>
+		</div>-->
+
+		<!--  레이어팝업 공통 스타일 -->
+		<div class="ui-dialog-pop">
+
+			<div class="popup pop_w500" tabindex="0" data-popup-con="popup500" data-focus="popup500" data-focus-prev="popup500-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 500)</h5>
+					</div>
+					<div class="popup_content">
+
+						<div class="info_desc">
+							<p><em>일괄 보류해제 처리</em>시 선택하신 모든 회차의 정산대금이 하나의 사유로 기록됩니다.</p>
+						</div>
+
+						<div class="md_tbl tbl_list">
+		                	<div class="tbl_wrap">
+								<table class="tbl">
+									<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+									<colgroup>
+										<col style="width:20%">
+										<col style="width:80%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>처리유형</th>
+											<td>뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.뮤지컬 ‘라이온 킹’ 인터내셔널 투어는 대구 계명 아트센터에서 11월 9일부터 12월 25일까지, 서울 공연은 2019년 1월 10일부터 3월 28일까지 예술 의전당 오페라극장에서 열린다.</td>
+										</tr>
+										<tr>
+											<th>처리사유</th>
+											<td>2019-09-09</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="btn_box">
+							<span class="btn_pack btn_medium btn_type4">
+		                		<button type="submit">확인</button>
+		                	</span>
+		                	<span class="btn_pack btn_medium btn_type">
+		                		<button type="submit">취소</button>
+		                	</span>
+						</div>
+
+					</div>
+				</div>
+				<a href="#none" class="ico popup-close" data-focus="popup500-close" data-focus-next="popup500">닫기</a>
+			</div>
+
+			<div class="popup pop_w600" tabindex="0" data-popup-con="popup600" data-focus="popup600" data-focus-prev="popup600-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 650)</h5>
+					</div>
+					<div class="popup_content">
+						<form method="">
+							<div class="search_option">
+								<div class="option_box">
+									<dl>
+										<dt>검색조건</dt>
+										<dd>
+											<div class="sel_wrap sel_w2">
+												<label for="select">업체명</label>
+												<select class="iselect" title="셀렉트 박스 선택">
+													<option>10건</option>
+													<option>20건</option>
+													<option>30건</option>
+													<option>40건</option>
+													<option>50건</option>
+												</select>
+											</div>
+											<span class="iw iText_w1">
+												<input type="text" class="iText" placeholder="검색어를 입력하세요">
+											</span>
+										</dd>
+									</dl>
+								</div>
+								<div class="option_btn">
+									<span class="btn_pack btn_small btn_type4">
+				                		<button type="submit">검색</button>
+				                	</span>
+								</div>
+							</div>
+						</form>
+
+						<div class="md_tbl">
+		                	<div class="tbl_wrap">
+								<table class="tbl">
+									<caption>제외 대상 등록 - 업체ID, 업체명, 사업자번호, 제외사유</caption>
+									<colgroup>
+										<col style="width:210px">
+										<col style="width:145px">
+										<col style="width:115px">
+										<col style="width:auto">
+									</colgroup>
+									<thead>
+										<tr>
+										    <th scope="col">업체ID</th>
+										    <th scope="col">업체명</th>
+										    <th scope="col">사업자번호</th>
+										    <th scope="col" class="last">제외사유</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="4" class="no_data">
+												<p>검색결과가 없습니다.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="btn_box">
+							<span class="btn_pack btn_medium btn_type4">
+		                		<button type="submit">확인</button>
+		                	</span>
+		                	<span class="btn_pack btn_medium btn_type">
+		                		<button type="submit">닫기</button>
+		                	</span>
+						</div>
+
+
+					</div>
+				</div>
+				<a href="#none" class="ico popup-close" data-focus="popup600-close" data-focus-next="popup600">닫기</a>
+			</div>
+
+			<div class="popup pop_w750" tabindex="0" data-popup-con="popup750" data-focus="popup750" data-focus-prev="popup750-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 750)</h5>
+					</div>
+					<div class="popup_content"></div>
+				</div>
+				<a href="#none" class="ico popup-close" data-focus="popup750-close" data-focus-next="popup750">닫기</a>
+			</div>
+
+			<div class="popup pop_w850" tabindex="0" data-popup-con="popup850" data-focus="popup850" data-focus-prev="popup850-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 850)</h5>
+					</div>
+					<div class="popup_content"></div>
+				</div>
+				<a href="#none" class="ico popup-close" data-focus="popup850-close" data-focus-next="popup850">닫기</a>
+			</div>
+
+			<div class="popup pop_w1000" tabindex="0" data-popup-con="popup1000" data-focus="popup1000" data-focus-prev="popup1000-close">
+				<div class="popup_inner">
+					<div class="popup_header">
+						<h5 class="title">팝업타이틀 (W 1000)</h5>
+					</div>
+					<div class="popup_content"></div>
+				</div>
+				<a href="#" class="ico popup-close" data-focus="popup1000-close" data-focus-next="popup1000">닫기</a>
+			</div>
+
+			<!--  xpopup 딤드 공통 스타일 -->
+			<div id="xpopup"></div>
+			<!--  xpopup 딤드 공통 스타일 -->
+
+		</div>
+		<!--  레이어팝업 공통 스타일 -->
+
+	</div>
+	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/grid/jszip.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="resources/js/ui-common.js"></script>
+	<script type="text/javascript" src="resources/js/moment.min.js"></script>
+	<script type="text/javascript" src="resources/js/fullcalendar.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			var todayDate = moment().startOf('day');
+			var YM = todayDate.format('YYYY-MM');
+			var YESTERDAY = todayDate.clone().subtract(1, 'day').format('YYYY-MM-DD');
+			var TODAY = todayDate.format('YYYY-MM-DD');
+			var TOMORROW = todayDate.clone().add(1, 'day').format('YYYY-MM-DD');
+			$('#calendar').fullCalendar({
+			    header: {
+			      left: '',
+			      center: 'prevYear, prev, title, next, nextYear',
+			      right: ''
+			    },
+			    contentHeight:468,
+		        selectable: false,
+			    editable: true,
+			    eventLimit: true,
+			    navLinks: true,
+			    titleFormat: 'YYYY - MM',
+			    monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월','8월', '9월', '10월', '11월', '12월'], 
+				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월','8월', '9월', '10월', '11월', '12월'], 
+				dayNames:['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'], 
+				dayNamesShort:['일', '월', '화', '수', '목', '금', '토'],
+			    events: [
+			      {
+			        title: '휴일',
+			        start: YM + '-01'
+			      },
+			      {
+			        title: '공휴일',
+			        start: YM + '-07',
+			        end: YM + '-10'
+			      },
+			      {
+			        id: 999,
+			        title: '정산불가',
+			        start: YM + '-09T16:00:00'
+			      },
+			      {
+			        id: 999,
+			        title: '휴일',
+			        start: YM + '-16T16:00:00'
+			      },
+			      {
+			        title: '[비활성]',
+			        start: YESTERDAY,
+			        end: TOMORROW
+			      },
+			      {
+			        title: '휴일',
+			        start: TODAY + 'T10:30:00',
+			        end: TODAY + 'T12:30:00'
+			      },
+			      {
+			        title: '휴일',
+			        start: TODAY + 'T12:00:00'
+			      },
+			      {
+			        title: '미팅',
+			        start: TODAY + 'T14:30:00'
+			      },
+			      {
+			        title: '점심',
+			        start: TODAY + 'T17:30:00'
+			      },
+			      {
+			        title: '미팅',
+			        start: TODAY + 'T20:00:00'
+			      },
+			      {
+			        title: '휴일',
+			        start: TOMORROW + 'T07:00:00'
+			      },
+			      {
+			        title: '휴일',
+			        url: 'http://google.com/',
+			        start: YM + '-28'
+			      }
+			    ],
+			    dayClick: function(date, jsEvent, view) {
+			        $(".highlight").removeClass("highlight");
+			        $("td[data-date="+date.format('YYYY-MM-DD')+"]").addClass("highlight");
+			    },
+			     /*
+			    select: function(allDay,startDate, endDate, jsEvent, view) {
+			    	$(".highlight").removeClass("highlight");
+			    	$('td[data-date="' + allDay.format('YYYY-MM-DD') + '"]').addClass("highlight");
+		        },*/
+				eventRender: function(event, eventElement) {
+				    if (event.title == "[비활성]") {
+				      eventElement.addClass('fc-non-business-day');
+				    }
+				 },
+			});
+
+			$(".fc-content-skeleton table tr td").hover(function() {
+				var $this= $(this);
+				$this.addClass('on');
+			}, function() {
+				var $this= $(this);
+				$this.removeClass('on');
+			});
+		});
+		init();
+	</script>
+</body>
+
+</html>
