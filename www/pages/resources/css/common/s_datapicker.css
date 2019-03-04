@@ -1,3 +1,12 @@
+/************************************************
+
+	UI-guide Kit
+	decrition by : kim tae yang
+	date : 2018-09-15
+	CSS customizing
+
+************************************************/
+
 @charset "utf-8";
 
 .ui-datepicker {display:none;width:188px;height:auto;margin:-1px auto 0;padding:7px 5px 5px;font:11px '돋움',Dotum,sans-serif; border:1px solid #939393;background:#fff}
