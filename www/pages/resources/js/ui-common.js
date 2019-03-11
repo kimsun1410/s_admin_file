@@ -92,6 +92,29 @@ function init() {
                 }
             })
         }());
+        var folderbox = (function() {
+            $(".menu_tr li i").on( "click", function() {
+                var $this = $(this);
+                $this.toggleClass('on');
+                if ($this.hasClass('on')) {
+                    $this.parent().next('.depth').show();
+                } else {
+                    $this.parent().next('.depth').hide();
+                } 
+            });
+            $(".menu_tr .box > span").on( "click", function() {
+                var $this = $(this);
+                var $box_sel = $('.menu_tr li');
+                $box_sel.removeClass('selected');
+                $this.parent('.box').parent('li').addClass("selected").siblings().removeClass('selected');
+                /*if (!$box_sel.hasClass('selected')) {
+                    $box_sel.siblings('.hidden').removeClass('selected');
+                } else {
+
+                    $this.parent('.box').parent('li').addClass('selected');
+                }*/
+            });
+        }());
         var fileupload = (function() {
             var fileTarget = $('.btn_file .blind');
             fileTarget.on('change', function() {
